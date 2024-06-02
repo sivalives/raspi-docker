@@ -1,0 +1,5 @@
+#INstall Docker SAMBA for file sharing !!
+#docker pull trnape/rpi-samba
+#below IP is raspberry pi IP
+#docker run -d -p 192.168.1.132:445:445 -v /var/lib/docker/volumes/iptv-volume/_data:/share/data --name docker-samba trnape/rpi-samba -u "pi:dont4get" -s "pi (private):/share/data/:rw:pi"
+

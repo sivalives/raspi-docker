@@ -1,0 +1,4 @@
+telepot
+dropbox
+telethon
+speedtest-cli
