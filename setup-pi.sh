@@ -16,7 +16,7 @@ fi
 echo "Setting up config for git seamless"
 git config --global user.email sivalives@gmail.com
 git config --global user.name Siva
-git remote set-url origin git@github.com:sivalives/docker.git
+git remote set-url origin git@github.com:sivalives/raspi-docker.git
 
 cat > $SSH_DIR/config <<EOF
 Host github.com
