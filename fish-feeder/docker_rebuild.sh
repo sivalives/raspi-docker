@@ -13,7 +13,8 @@ docker image rm fish-feeder
 docker build -t fish-feeder .
 
 #Run and create container
-docker run -d --restart unless-stopped --name fish-feeder fish-feeder
+#docker run -d --restart unless-stopped --name fish-feeder fish-feeder
+docker run -d -v $(pwd)/trigger-motor.sh:/home/trigger-motor.sh  --restart unless-stopped --name fish-feeder fish-feeder
 
 #Login to Docker Container : 
 #docker exec -it fish-feeder bash
