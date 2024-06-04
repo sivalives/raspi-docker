@@ -1,2 +1,2 @@
-*/2 * * * * root /usr/local/bin/python /bin/fish/stepper_motor.py >> /var/log/cron.log 2>&1
+*/2 * * * * root /usr/local/bin/python3 /bin/fish/stepper_motor.py >> /var/log/cron.log 2>&1
 #empty Line
