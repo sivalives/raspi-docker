@@ -166,6 +166,19 @@ services:
       - flask
     networks:
       - mynetwork
+
+  fish-feeder:
+    build:
+      context: ./fish-feeder
+      dockerfile: Dockerfile
+    container_name: fish-feeder
+    image: sivalives/fish-feeder
+    privileged: true
+    restart: always
+    volumes:
+      - fish-feeder-data:/var/log
+    networks:
+      - mynetwork
  
 networks:
   mynetwork:
@@ -176,3 +189,4 @@ volumes:
   mongo-data:
   python-flask-data:
   nginx-data:
+  fish-feeder-data:
