@@ -1,3 +1,4 @@
 termcolor
 requests
 dropbox
+RPi.GPIO

@@ -9,6 +9,6 @@ RUN touch /var/log/cron.log
 RUN chmod 0644 /etc/cron.d/fish-cron
 RUN chmod -R +x /bin/fish
 RUN apt-get update -y
-RUN apt-get -y install cron vim python3-pip RPi.GPIO
+RUN apt-get -y install cron vim python3-pip
 RUN pip install --requirement /bin/fish/requirements.txt
 CMD cron && tail -f /var/log/cron.log
