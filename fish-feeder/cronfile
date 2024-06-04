@@ -1,2 +1,2 @@
-*/2 * * * * root /usr/bin/bash /home/trigger-motor.sh >> /var/log/cron.log 2>&1
+*/2 * * * * root /usr/bin/bash /bin/fish/stepper-motor.sh >> /var/log/cron.log 2>&1
 #empty Line
