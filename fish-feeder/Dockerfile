@@ -1,8 +1,8 @@
-#Python script to feed the fish daily - uses stepper motor or servo motor 
+#Python script to feed the fish daily - use stepper motor or servo motor 
 #Check crontab file where input and output for python script is specified. Output directs to volume!
 FROM python:latest
 COPY requirements.txt /bin/fish/requirements.txt
-COPY stepper_motor.py /bin/fish/stepper_motor.py
+COPY servo_motor_180.py /bin/fish/servo_motor_180.py
 COPY dropbox_utils_v2.py /bin/fish/dropbox_utils_v2.py
 ADD cronfile /etc/cron.d/fish-cron
 RUN touch /var/log/cron.log
