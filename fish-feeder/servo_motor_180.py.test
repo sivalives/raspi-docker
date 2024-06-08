@@ -15,18 +15,18 @@ pwm = GPIO.PWM(servo_pin, 50)  # 50Hz PWM frequency
 pwm.start(0)
 
 # Function to set the servo angle
-def set_servo_angle(angle):
+def set_servo_angle(angle,sleep_time):
     duty_cycle = (angle / 18.0) + 2.5  # Convert angle to duty cycle
     pwm.ChangeDutyCycle(duty_cycle)
-    time.sleep(0.2)
+    time.sleep(sleep_time)
     pwm.ChangeDutyCycle(0)
 
 try:
     # Rotate to 180 degrees and back to 0 degrees two times
     for _ in range(2):
-        set_servo_angle(180)
+        set_servo_angle(180,0.2)
         time.sleep(0.3)
-        set_servo_angle(0)
+        set_servo_angle(0,0.2)
         time.sleep(0.3)
 
 finally:
