@@ -1,2 +1,4 @@
-*/2 * * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
+####*/2 * * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
+#Feed fish at 8:00 am and 8:00 pm
+0 8,20 * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
 #empty Line
