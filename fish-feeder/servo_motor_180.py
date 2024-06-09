@@ -23,7 +23,7 @@ def set_servo_angle(angle):
 
 try:
     # Rotate to 180 degrees and back to 0 degrees two times
-    for _ in range(8):
+    for _ in range(2):
         set_servo_angle(180)
         time.sleep(0.3)
         set_servo_angle(0)

@@ -1,5 +1,7 @@
 ####*/2 * * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
 #Feed fish at 8:00 am and 8:00 pm - convert to UTC time 
 30 2 * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
+31 2 * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
 30 14 * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
+31 14 * * * root /usr/local/bin/python3 /bin/fish/servo_motor_180.py >> /var/log/cron.log 2>&1
 #empty Line
