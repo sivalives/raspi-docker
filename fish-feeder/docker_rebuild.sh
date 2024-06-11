@@ -13,7 +13,7 @@ docker image rm fish-feeder
 docker build -t fish-feeder .
 
 #Run and create container
-docker run --privileged -d --restart unless-stopped --name fish-feeder fish-feeder -e PYTHONUNBUFFERED=1
+docker run --privileged -d --restart unless-stopped --name fish-feeder fish-feeder
 
 #Login to Docker Container : 
 #docker exec -it fish-feeder bash
