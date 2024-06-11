@@ -1,5 +1,7 @@
 import RPi.GPIO as GPIO
 import time
+from datetime import datetime
+import pytz
 
 # Set the GPIO mode
 GPIO.setmode(GPIO.BCM)
@@ -28,6 +30,10 @@ try:
         time.sleep(0.3)
         set_servo_angle(0)
         time.sleep(0.3)
+        
+    # Print the current IST time once at the end of the loop
+    ist_now = datetime.now(pytz.timezone('Asia/Kolkata'))
+    print("Loop completed at:", ist_now.strftime('%Y-%m-%d %H:%M:%S %Z%z'))
 
 finally:
     # Clean up the GPIO settings
