@@ -5,7 +5,7 @@ from dropbox_operations import *
 
 app = Flask(__name__)
 
-TOKEN_FILE = 'tokens.json'
+TOKEN_FILE = '/app/token_data/tokens.json'
 
 @app.route('/')
 def home():
