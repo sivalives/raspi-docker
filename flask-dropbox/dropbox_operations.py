@@ -17,6 +17,7 @@ def save_tokens(access_token, refresh_token, expires_in, token_file):
         'refresh_token': refresh_token,
         'expires_at': (datetime.now() + timedelta(seconds=expires_in)).isoformat()
     }
+    print("Token file ",token_file)
     with open(token_file, 'w') as f:
         json.dump(tokens, f)
 

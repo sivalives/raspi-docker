@@ -13,7 +13,7 @@ docker image rm flask-dropbox
 docker build -t flask-dropbox .
 
 #Run and create container
-docker run --privileged -d --restart unless-stopped -p 5000:5000 --mount source=token_data,target=/app/token_data --name flask-dropbox flask-dropbox  
+docker run --privileged -d --restart unless-stopped -p 5000:5000 --name flask-dropbox flask-dropbox  
 
 #Login to Docker Container : 
 #docker exec -it flask-dropbox bash
