@@ -2,7 +2,7 @@
 sudo pacman -S nfs-utils
 sudo mkdir -p /run/media/wd_black_1b
 sudo nano /etc/exports
-/run/media/wd_black_1b <raspberry-pi-ip>(rw,sync,no_subtree_check)
+/run/media/siva/wd_black_1tb <raspberry-pi-ip>(rw,sync,no_subtree_check)
 sudo systemctl enable nfs-server
 sudo systemctl start nfs-server
 sudo exportfs -rav
@@ -12,7 +12,7 @@ sudo apt update
 sudo apt install nfs-common
 sudo mkdir -p /mnt/manjaro_drive
 sudo nano /etc/fstab
-<manjaro-ip>:/mnt/external1TB/share /mnt/manjaro_drive nfs defaults 0 0A
+<manjaro-ip>:/run/media/siva/wd_black_1tb /mnt/manjaro_drive nfs defaults 0 0
 sudo mount -a
 
 
