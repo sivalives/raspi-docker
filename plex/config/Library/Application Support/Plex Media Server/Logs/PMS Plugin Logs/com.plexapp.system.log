@@ -1,0 +1,189 @@
+2024-10-02 10:17:58,465 (7facbf8890) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: f2c27da (Mon Sep 23 10:05:42 UTC 2024)
+2024-10-02 10:17:58,466 (7facbf8890) :  DEBUG (core:361) - Using the elevated policy
+2024-10-02 10:17:58,467 (7facbf8890) :  DEBUG (core:365) - Extending whitelist: ['cgi', 'tempfile']
+2024-10-02 10:17:58,468 (7facbf8890) :  DEBUG (core:450) - Starting runtime component.
+2024-10-02 10:17:58,474 (7facbf8890) :  DEBUG (core:450) - Starting caching component.
+2024-10-02 10:17:58,475 (7facbf8890) :  DEBUG (core:450) - Starting data component.
+2024-10-02 10:17:58,476 (7facbf8890) :  DEBUG (core:450) - Starting networking component.
+2024-10-02 10:17:58,478 (7facbf8890) :  DEBUG (networking:262) - Loaded HTTP cookies
+2024-10-02 10:17:58,480 (7facbf8890) :  DEBUG (networking:434) - Setting the default network timeout to 20.0
+2024-10-02 10:17:58,483 (7facbf8890) :  DEBUG (core:450) - Starting localization component.
+2024-10-02 10:17:58,484 (7facbf8890) :  INFO (localization:409) - Setting the default locale to en-us
+2024-10-02 10:17:58,485 (7facbf8890) :  WARNING (data:179) - Error decoding with simplejson, using demjson instead (this will cause a performance hit) - Expecting property name enclosed in double quotes: line 26 column 1 (char 1078)
+2024-10-02 10:17:58,499 (7facbf8890) :  DEBUG (localization:427) - Loaded en strings
+2024-10-02 10:17:58,501 (7facbf8890) :  DEBUG (core:450) - Starting messaging component.
+2024-10-02 10:17:58,501 (7facbf8890) :  DEBUG (core:450) - Starting debugging component.
+2024-10-02 10:17:58,502 (7facbf8890) :  DEBUG (core:450) - Starting services component.
+2024-10-02 10:17:58,503 (7facbf8890) :  DEBUG (core:450) - Starting myplex component.
+2024-10-02 10:17:58,504 (7facbf8890) :  DEBUG (core:450) - Starting notifications component.
+2024-10-02 10:17:59,350 (7facbf8890) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.system in namespace 'metadata'
+2024-10-02 10:17:59,422 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+2024-10-02 10:17:59,423 (7fa95e2b08) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
+2024-10-02 10:17:59,428 (7fa95e2b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2024-10-02 10:17:59,429 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
+2024-10-02 10:17:59,435 (7fa955cb08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400'
+2024-10-02 10:17:59,436 (7facbf8890) :  DEBUG (core:150) - Finished starting framework core
+2024-10-02 10:17:59,442 (7fa95e2b08) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2024-10-02 10:17:59,443 (7facbf8890) :  DEBUG (core:560) - Loading plug-in code
+2024-10-02 10:17:59,445 (7fa95e2b08) :  ERROR (services:272) - Unable to load services from system. Loading from the current bundle only.
+2024-10-02 10:17:59,448 (7fa955cb08) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400'
+2024-10-02 10:17:59,508 (7fa955cb08) :  WARNING (core:541) - Unable to retrieve the machine identifier or server version.
+2024-10-02 10:17:59,570 (7facbf8890) :  DEBUG (core:566) - Finished loading plug-in code
+2024-10-02 10:17:59,574 (7fa95e2b08) :  DEBUG (services:362) - Loaded services
+2024-10-02 10:17:59,575 (7facbf8890) :  DEBUG (runtime:640) - Adding a prefix handler for 'System' ('/system')
+2024-10-02 10:17:59,596 (7fa95bfb08) :  DEBUG (services:438) - No shared code to load
+2024-10-02 10:18:03,681 (7facbf8890) :  INFO (__init__:35) - Starting System f2c27da (Mon Sep 23 10:05:42 UTC 2024)
+2024-10-02 10:18:03,682 (7facbf8890) :  DEBUG (runtime:640) - Adding a prefix handler for 'Player' ('/player')
+2024-10-02 10:18:03,719 (7facbf8890) :  INFO (datakit:93) - Loaded the dictionary file
+2024-10-02 10:18:03,722 (7facbf8890) :  DEBUG (agentservice:52) - Starting the agent service
+2024-10-02 10:18:04,569 (7facbf8890) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.system in namespace 'metadata'
+2024-10-02 10:18:04,615 (7facbf8890) :  DEBUG (bundleservice:65) - Starting the bundle service
+2024-10-02 10:18:04,617 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2024-10-02 10:18:04,618 (7facbf8890) :  DEBUG (playerservice:12) - Starting the player service
+2024-10-02 10:18:04,620 (7facbf8890) :  DEBUG (flagservice:13) - Starting the media flag service
+2024-10-02 10:18:04,622 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2024-10-02 10:18:04,623 (7facbf8890) :  DEBUG (peerservice:141) - Starting the peer service
+2024-10-02 10:18:04,630 (7fa9379b08) :  DEBUG (peerservice:164) - Fetching the current list of servers
+2024-10-02 10:18:04,631 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'refresh_servers'
+2024-10-02 10:18:04,636 (7fa9379b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/servers'
+2024-10-02 10:18:04,637 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,641 (7facbf8890) :  DEBUG (runtime:1150) - Scheduled a timed thread named 'refresh_servers'
+2024-10-02 10:18:04,645 (7facbf8890) :  DEBUG (streamservice:18) - Starting the stream service
+2024-10-02 10:18:04,646 (7facbf8890) :  CRITICAL (runtime:709) - Private handlers are no longer supported; couldn't register <bound method StreamService.token_handler of <streamservice.StreamService object at 0x7fa8b33f10>>
+2024-10-02 10:18:04,648 (7fa9379b08) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/servers'
+2024-10-02 10:18:04,650 (7facbf8890) :  DEBUG (runtime:1150) - Scheduled a timed thread named 'invalidation_timer'
+2024-10-02 10:18:04,653 (7facbf8890) :  DEBUG (proxyservice:12) - Starting the proxy service
+2024-10-02 10:18:04,665 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'update_attribution_flags_inner'
+2024-10-02 10:18:04,667 (7facbf8890) :  INFO (core:611) - Started plug-in
+2024-10-02 10:18:04,668 (7facbf8890) :  DEBUG (socketinterface:160) - Starting socket server
+2024-10-02 10:18:04,675 (7facbf8890) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2024-10-02 10:18:04,676 (7facbf8890) :  INFO (socketinterface:184) - Socket server started on port 38937
+2024-10-02 10:18:04,677 (7facbf8890) :  INFO (pipeinterface:25) - Entering run loop
+2024-10-02 10:18:04,679 (7facbf8890) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
+2024-10-02 10:18:04,688 (7facbf8890) :  DEBUG (runtime:814) - Found route matching /:/prefixes
+2024-10-02 10:18:04,695 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,699 (7fa9379b08) :  CRITICAL (runtime:1128) - Exception in thread named 'refresh_servers' (most recent call last):
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1126, in _start_thread
+    f(*args, **kwargs)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/System.bundle/Contents/Code/peerservice.py", line 169, in refresh_servers
+    servers_el = self.get_servers_el()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/System.bundle/Contents/Code/peerservice.py", line 165, in get_servers_el
+    return XML.ElementFromURL('http://127.0.0.1:32400/servers', cacheTime = 0)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/api/parsekit.py", line 344, in ElementFromURL
+    method=method,
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/api/networkkit.py", line 67, in _http_request
+    req = self._core.networking.http_request(url, *args, **kwargs)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 352, in http_request
+    return HTTPRequest(self._core, url, data, h, url_cache, encoding, errors, timeout, immediate, sleep, opener, follow_redirects, method)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 119, in __init__
+    self.load()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 503: Service Unavailable
+
+2024-10-02 10:18:04,705 (7facbf8890) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 486 bytes
+2024-10-02 10:18:04,711 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,715 (7fa9379b08) :  DEBUG (runtime:717) - Handling request GET /system/agents
+2024-10-02 10:18:04,756 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,797 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,825 (7fa9379b08) :  DEBUG (runtime:814) - Found route matching /system/agents
+2024-10-02 10:18:04,829 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,838 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,842 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,846 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,850 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,852 (7fa93bfb08) :  INFO (bundleservice:131) - Found duplicate identifier at /usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/TheTVDBv4.bundle for bundled plugin (com.plexapp.agents.thetvdb), ignoring duplicate plugin.
+2024-10-02 10:18:04,855 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,860 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,868 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,870 (7fa93bfb08) :  DEBUG (runtime:1117) - Created a thread named 'remove_unavailable_agents'
+2024-10-02 10:18:04,871 (7fa93bfb08) :  DEBUG (bundleservice:81) - Started the bundle service
+2024-10-02 10:18:04,883 (7fa939cb08) :  DEBUG (flagservice:46) - Started the media flag service
+2024-10-02 10:18:04,895 (7fa9379b08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,948 (7fa9379b08) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 8986 bytes
+2024-10-02 10:18:04,959 (7fa8c56b08) :  DEBUG (runtime:1117) - Created a thread named 'ensure_agent_info_exists_inner'
+2024-10-02 10:18:04,969 (7fa8d92b08) :  INFO (agentservice:129) - Agent info: {'com.plexapp.agents.fanarttv': [{'media_types': ['Movie'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb', 'com.plexapp.agents.themoviedb'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Fanart.tv'}, {'media_types': ['TV_Show'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb', 'com.plexapp.agents.themoviedb'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Fanart.tv'}, {'media_types': ['Artist'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.lastfm'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Fanart.tv'}, {'media_types': ['Album'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.lastfm'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Fanart.tv'}], 'com.plexapp.agents.none': [{'media_types': ['Movie'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Personal Media'}, {'media_types': ['TV_Show'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Personal Media Shows'}, {'media_types': ['Artist'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Personal Media Artists'}, {'media_types': ['Album'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Personal Media Albums'}, {'media_types': ['Photo'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': False, 'languages': ['en', 'ar', 'bg', 'ca', 'cs', 'cy', 'da', 'de', 'el', 'es', 'et', 'fa', 'fi', 'fr', 'he', 'hi', 'hr', 'ht', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'lv', 'ms', 'mt', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'sk', 'sv', 'sl', 'sr', 'th', 'tr', 'uk', 'ur', 'vi', 'zh', 'xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Photos'}], 'com.plexapp.agents.htbackdrops': [{'media_types': ['Artist'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.lastfm'], 'has_attribution': True, 'languages': ['ab', 'aa', 'af', 'ak', 'sq', 'am', 'ar', 'an', 'hy', 'as', 'av', 'ae', 'ay', 'az', 'bm', 'ba', 'eu', 'be', 'bn', 'bh', 'bi', 'bs', 'pb', 'br', 'bg', 'my', 'ca', 'ch', 'ce', 'ny', 'zh', 'cu', 'cv', 'kw', 'co', 'cr', 'hr', 'cs', 'da', 'dv', 'nl', 'dz', 'en', 'eo', 'et', 'ee', 'fo', 'fj', 'fi', 'fr', 'fy', 'ff', 'gd', 'gl', 'lg', 'ka', 'de', 'el', 'gn', 'gu', 'ht', 'ha', 'he', 'hz', 'hi', 'ho', 'hu', 'is', 'io', 'ig', 'id', 'ia', 'ie', 'iu', 'ik', 'ga', 'it', 'ja', 'jv', 'kl', 'kn', 'kr', 'ks', 'kk', 'km', 'ki', 'rw', 'ky', 'kv', 'kg', 'ko', 'kj', 'ku', 'lo', 'la', 'lv', 'li', 'ln', 'lt', 'lu', 'lb', 'mk', 'mg', 'ms', 'ml', 'mt', 'gv', 'mi', 'mr', 'mh', 'mo', 'mn', 'na', 'nv', 'ng', 'ne', 'xn', 'nd', 'no', 'nb', 'nn', 'oc', 'oj', 'or', 'om', 'os', 'pi', 'pa', 'fa', 'pl', 'pt', 'ps', 'qu', 'rm', 'ro', 'rn', 'ru', 'se', 'sm', 'sg', 'sa', 'sc', 'sr', 'sn', 'ii', 'sd', 'si', 'sk', 'sl', 'so', 'st', 'nr', 'es', 'su', 'sw', 'ss', 'sv', 'tl', 'ty', 'tg', 'ta', 'tt', 'te', 'th', 'bo', 'ti', 'to', 'ts', 'tn', 'tr', 'tk', 'tw', 'ug', 'uk', 'ur', 'uz', 've', 'vi', 'vo', 'wa', 'cy', 'wo', 'xh', 'yi', 'yo', 'za', 'zu'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Home Theater Backdrops'}], 'com.plexapp.agents.imdb': [{'media_types': ['Movie'], 'accepts_from': ['com.plexapp.agents.localmedia'], 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.themoviedb'], 'has_attribution': True, 'languages': ['en', 'sv', 'fr', 'es', 'nl', 'de', 'it', 'da', 'ar', 'ca', 'zh', 'cs', 'et', 'fi', 'el', 'he', 'hi', 'hu', 'id', 'ja', 'ko', 'lv', 'no', 'fa', 'pl', 'pt', 'ro', 'ru', 'sk', 'th', 'tr', 'uk', 'vi'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Plex Movie (Legacy)'}], 'com.plexapp.agents.lyricfind': [{'media_types': ['Album'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.lastfm', 'tv.plex.agents.music', 'org.musicbrainz.agents.music'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'LyricFind'}], 'com.plexapp.agents.thetvdb': [{'media_types': ['TV_Show'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'fr', 'zh', 'sv', 'no', 'da', 'fi', 'nl', 'de', 'it', 'es', 'pl', 'hu', 'el', 'tr', 'ru', 'he', 'ja', 'pt', 'cs', 'ko', 'sl', 'hr'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'TheTVDB'}], 'com.plexapp.agents.lastfm': [{'media_types': ['Artist'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Last.fm'}, {'media_types': ['Album'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Last.fm'}], 'org.musicbrainz.agents.music': [{'media_types': ['Artist'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'ar', 'bg', 'zh', 'hr', 'cs', 'da', 'nl', 'fi', 'fr', 'de', 'el', 'hu', 'id', 'it', 'ja', 'ko', 'nn', 'pl', 'pt', 'ro', 'ru', 'sr', 'sk', 'es', 'sv', 'th', 'tr', 'vi', 'xx'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Musicbrainz'}, {'media_types': ['Album'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'ar', 'bg', 'zh', 'hr', 'cs', 'da', 'nl', 'fi', 'fr', 'de', 'el', 'hu', 'id', 'it', 'ja', 'ko', 'nn', 'pl', 'pt', 'ro', 'ru', 'sr', 'sk', 'es', 'sv', 'th', 'tr', 'vi', 'xx'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Musicbrainz'}], 'com.plexapp.agents.themoviedb': [{'media_types': ['Movie'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': None, 'has_attribution': True, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'accepts_from': ['com.plexapp.agents.localmedia'], 'prefs': True, 'name': 'The Movie Database'}, {'media_types': ['TV_Show'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb'], 'has_attribution': True, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'accepts_from': ['com.plexapp.agents.localmedia', 'com.plexapp.agents.thetvdb'], 'prefs': True, 'name': 'The Movie Database'}], 'com.plexapp.agents.movieposterdb': [{'media_types': ['Movie'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb'], 'has_attribution': True, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'CineMaterial'}], 'com.plexapp.agents.localmedia': [{'media_types': ['Movie'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb', 'com.plexapp.agents.none'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': False, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Local Media Assets (Movies)'}, {'media_types': ['TV_Show'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb', 'com.plexapp.agents.none'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': False, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Local Media Assets (TV)'}, {'media_types': ['Artist'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.discogs', 'com.plexapp.agents.lastfm', 'com.plexapp.agents.plexmusic', 'com.plexapp.agents.none', 'tv.plex.agents.music', 'org.musicbrainz.agents.music'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': False, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Local Media Assets (Artists)'}, {'media_types': ['Artist'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.plexmusic'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': False, 'version': 2, 'accepts_from': None, 'prefs': True, 'name': 'Local Media Assets (Artists)'}, {'media_types': ['Album'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.discogs', 'com.plexapp.agents.lastfm', 'com.plexapp.agents.plexmusic', 'com.plexapp.agents.none', 'tv.plex.agents.music', 'org.musicbrainz.agents.music'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': False, 'version': 0, 'accepts_from': None, 'prefs': True, 'name': 'Local Media Assets (Albums)'}], 'com.plexapp.agents.plexthememusic': [{'media_types': ['TV_Show'], 'primary_provider': False, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb', 'com.plexapp.agents.thetvdbdvdorder', 'com.plexapp.agents.themoviedb'], 'has_attribution': False, 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'accepts_from': None, 'prefs': False, 'name': 'Plex Theme Music'}]}
+2024-10-02 10:18:05,011 (7fa8d92b08) :  INFO (datakit:131) - Saved the dictionary file
+2024-10-02 10:18:09,741 (7fa9397b08) :  DEBUG (runtime:717) - Handling request GET /system/notify/serverUpdated?host=127.0.0.1
+2024-10-02 10:18:09,875 (7fa9397b08) :  DEBUG (runtime:814) - Found route matching /system/notify/serverUpdated
+2024-10-02 10:18:09,876 (7fa9397b08) :  DEBUG (peerservice:386) - Handling server update notification (127.0.0.1)
+2024-10-02 10:18:09,877 (7fa9397b08) :  DEBUG (peerservice:189) - Updating servers (True/False True/True/True)
+2024-10-02 10:18:09,879 (7fa9397b08) :  DEBUG (peerservice:164) - Fetching the current list of servers
+2024-10-02 10:18:09,881 (7fa9397b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/servers'
+2024-10-02 10:18:09,892 (7fa9397b08) :  DEBUG (peerservice:198) - Found 1 servers
+2024-10-02 10:18:09,893 (7fa9397b08) :  DEBUG (peerservice:214) - Ignoring fe9e79c742baa9f0ccb0dcfddce46939140831b1 because host != 127.0.0.1 (10.0.0.3)
+2024-10-02 10:18:09,898 (7fa9397b08) :  DEBUG (runtime:924) - Response: [200] str, 0 bytes
+2024-10-02 10:18:10,183 (7fa93bfb08) :  DEBUG (runtime:717) - Handling request GET /system/messaging/clear_events/com.plexapp.agents.imdb
+2024-10-02 10:18:10,190 (7fa93bfb08) :  DEBUG (runtime:814) - Found route matching /system/messaging/clear_events/com.plexapp.agents.imdb
+2024-10-02 10:18:10,195 (7fa93bfb08) :  DEBUG (runtime:88) - Sending packed state data (99 bytes)
+2024-10-02 10:18:10,197 (7fa93bfb08) :  DEBUG (runtime:924) - Response: [200] str, 0 bytes
+2024-10-02 10:18:11,088 (7fa93bfb08) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.system/resourceHashes
+2024-10-02 10:18:11,170 (7fa93bfb08) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.system/resourceHashes
+2024-10-02 10:18:11,172 (7fa93bfb08) :  DEBUG (networking:144) - Requesting 'http://resources-cdn.plexapp.com/hashes.json'
+2024-10-02 10:18:11,257 (7fa93bfb08) :  ERROR (networking:197) - Error opening URL 'http://resources-cdn.plexapp.com/hashes.json'
+2024-10-02 10:18:11,259 (7fa93bfb08) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1291, in get_resource_hashes
+    json = self._core.networking.http_request("http://resources-cdn.plexapp.com/hashes.json", timeout=5).content
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/lib/plexmediaserver/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+
+2024-10-02 10:18:11,264 (7fa93bfb08) :  DEBUG (runtime:88) - Sending packed state data (99 bytes)
+2024-10-02 10:18:11,265 (7fa93bfb08) :  DEBUG (runtime:924) - Response: [404] NoneType, 0 bytes
+2024-10-02 10:18:12,006 (7fa93bfb08) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_
+2024-10-02 10:18:12,011 (7fa93bfb08) :  DEBUG (runtime:49) - Received packed state data (80 bytes)
+2024-10-02 10:18:12,016 (7fa93bfb08) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_
+2024-10-02 10:18:12,023 (7fa93bfb08) :  DEBUG (runtime:88) - Sending packed state data (99 bytes)
+2024-10-02 10:18:12,025 (7fa93bfb08) :  DEBUG (runtime:924) - Response: [200] str, 516 bytes
+2024-10-02 10:18:15,735 (7fa93bfb08) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_
+2024-10-02 10:18:15,739 (7fa93bfb08) :  DEBUG (runtime:49) - Received packed state data (80 bytes)
+2024-10-02 10:18:15,745 (7fa93bfb08) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_
+2024-10-02 10:18:15,748 (7fa93bfb08) :  INFO (agentservice:175) - Receiving agent info from com.plexapp.agents.imdb: [{'media_types': ['Movie'], 'primary_provider': True, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.themoviedb'], 'languages': ['en', 'sv', 'fr', 'es', 'nl', 'de', 'it', 'da', 'ar', 'ca', 'zh', 'cs', 'et', 'fi', 'el', 'he', 'hi', 'hu', 'id', 'ja', 'ko', 'lv', 'no', 'fa', 'pl', 'pt', 'ro', 'ru', 'sk', 'th', 'tr', 'uk', 'vi'], 'persist_stored_files': True, 'version': 0, 'accepts_from': ['com.plexapp.agents.localmedia'], 'prefs': True, 'name': 'Plex Movie (Legacy)'}]
+2024-10-02 10:18:15,756 (7fa93bfb08) :  DEBUG (runtime:88) - Sending packed state data (99 bytes)
+2024-10-02 10:18:15,757 (7fa93bfb08) :  DEBUG (runtime:924) - Response: [200] str, 16 bytes
+2024-10-02 10:18:20,816 (7fa939cb08) :  INFO (datakit:131) - Saved the dictionary file
+2024-10-02 10:19:30,482 (7fa93bab08) :  DEBUG (runtime:717) - Handling request GET /system/scanners/1
+2024-10-02 10:19:30,492 (7fa93bab08) :  DEBUG (runtime:814) - Found route matching /system/scanners/1
+2024-10-02 10:19:30,503 (7fa93bab08) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 299 bytes
+2024-10-02 10:20:04,641 (7fa9356b08) :  DEBUG (runtime:1156) - Starting timed thread named 'refresh_servers'
+2024-10-02 10:20:04,643 (7fa9356b08) :  DEBUG (peerservice:164) - Fetching the current list of servers
+2024-10-02 10:20:04,647 (7fa9356b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/servers'
+2024-10-02 10:20:04,663 (7fa9356b08) :  DEBUG (peerservice:171) - Refreshing local server
+2024-10-02 10:20:04,665 (7fa9356b08) :  DEBUG (peerservice:189) - Updating servers (True/False True/True/True)
+2024-10-02 10:20:04,667 (7fa9356b08) :  DEBUG (peerservice:198) - Found 1 servers
+2024-10-02 10:20:04,670 (7fa9356b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400'
+2024-10-02 10:20:04,827 (7fa9356b08) :  DEBUG (core:521) - Attribute 'machineIdentifier' set to 'fe9e79c742baa9f0ccb0dcfddce46939140831b1'
+2024-10-02 10:20:04,829 (7fa9356b08) :  DEBUG (peerservice:230) - Creating new server raspi (fe9e79c742baa9f0ccb0dcfddce46939140831b1)
+2024-10-02 10:20:04,831 (7fa9356b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/library/sections'
+2024-10-02 10:20:05,051 (7fa9356b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/channels/all'
+2024-10-02 10:20:05,207 (7fa938fb08) :  DEBUG (peerservice:176) - Background-refreshing remote servers
+2024-10-02 10:20:05,209 (7fa9356b08) :  DEBUG (runtime:1117) - Created a thread named 'background_refresh'
+2024-10-02 10:20:05,210 (7fa938fb08) :  DEBUG (peerservice:189) - Updating servers (True/False True/True/True)
+2024-10-02 10:20:05,214 (7fa938fb08) :  DEBUG (peerservice:198) - Found 1 servers
+2024-10-02 10:20:05,216 (7fa938fb08) :  DEBUG (peerservice:233) - Updating existing server raspi (fe9e79c742baa9f0ccb0dcfddce46939140831b1)
+2024-10-02 10:20:05,219 (7fa938fb08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/library/sections'
+2024-10-02 10:20:05,238 (7fa938fb08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/channels/all'

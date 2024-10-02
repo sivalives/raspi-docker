@@ -1,0 +1,5 @@
+Oct 02, 2024 10:01:54.020 [548604189392] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1727861189 Duration: 2124 UserId: sivalives@gmail.com Version: 1.41.0.8994-f2c27da23
+Oct 02, 2024 10:01:54.023 [548635752592] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oct 02, 2024 10:01:54.373 [548604000976] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.3s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Oct 02, 2024 10:01:54.373 [548635752592] INFO - Successfully reported session health
+Oct 02, 2024 10:01:54.373 [548635752592] INFO - Crash Uploader - Processing Complete.

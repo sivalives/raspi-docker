@@ -1,0 +1,4 @@
+Oct 02, 2024 10:17:55.278 [548014545616] INFO - Crash Uploader - Platform: Linux ServerUUID: fe9e79c742baa9f0ccb0dcfddce46939140831b1 UserId: sivalives@gmail.com Version: 1.41.0.8994-f2c27da23
+Oct 02, 2024 10:17:55.279 [548014545616] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.41.0.8994-f2c27da23
+Oct 02, 2024 10:17:55.279 [548014545616] INFO - Post-processed minidump directory: /tmp
+Oct 02, 2024 10:17:55.279 [548046108816] INFO - Crash Uploader - Processing Complete.

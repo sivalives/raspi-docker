@@ -1,0 +1,140 @@
+Oct 02, 2024 10:20:21.407 [548390149624] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT 00:00
+Oct 02, 2024 10:20:21.408 [548390149624] INFO - Linux version: 6.6.20+rpt-rpi-v8, language: en-US
+Oct 02, 2024 10:20:21.408 [548390149624] INFO - Processor: 4-core AArch64
+Oct 02, 2024 10:20:21.408 [548390149624] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 1
+Oct 02, 2024 10:20:21.409 [548470329400] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 02, 2024 10:20:21.979 [548470329400] DEBUG - Analyzing media parts for item 1 (Nunakuzhi): 1
+Oct 02, 2024 10:20:22.006 [548470329400] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 02, 2024 10:20:22.007 [548470329400] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 02, 2024 10:20:22.009 [548379749880] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Oct 02, 2024 10:20:22.010 [548470329400] DEBUG - Updating metadata item (save) (Nunakuzhi) with ID 1
+Oct 02, 2024 10:20:22.016 [548470329400] DEBUG - [ID 1] Media part analysis: /movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv
+Oct 02, 2024 10:20:22.017 [548470329400] DEBUG - [MI] Opening input file: "/movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv"
+Oct 02, 2024 10:20:22.044 [548470329400] DEBUG - [FFMPEG] - Opening '/movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv' for reading
+Oct 02, 2024 10:20:22.054 [548470329400] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Oct 02, 2024 10:20:22.101 [548470329400] DEBUG - [FFMPEG] - Format matroska,webm probed with size=2048 and score=100
+Oct 02, 2024 10:20:22.101 [548470329400] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4417
+Oct 02, 2024 10:20:22.101 [548470329400] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4527
+Oct 02, 2024 10:20:22.101 [548470329400] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4629
+Oct 02, 2024 10:20:22.101 [548470329400] DEBUG - [FFMPEG] - Unknown entry 0x22B59D at pos. 4720
+Oct 02, 2024 10:20:22.111 [548470329400] DEBUG - [FFMPEG] - st:0 removing common factor 1000000 from timebase
+Oct 02, 2024 10:20:22.111 [548470329400] DEBUG - [FFMPEG] - st:1 removing common factor 1000000 from timebase
+Oct 02, 2024 10:20:22.111 [548470329400] DEBUG - [FFMPEG] - st:2 removing common factor 1000000 from timebase
+Oct 02, 2024 10:20:22.111 [548470329400] DEBUG - [FFMPEG] - st:3 removing common factor 1000000 from timebase
+Oct 02, 2024 10:20:22.118 [548470329400] INFO - CodecManager: obtaining decoder 'h264'
+Oct 02, 2024 10:20:22.118 [548470329400] DEBUG - [HCl#2] HTTP requesting GET https://plex.tv/api/codecs/h264_decoder?build=linux-aarch64-standard&deviceId=b12a6d11-998d-4164-83ee-7d242df1a943&oldestPreviousVersion=1%2E41%2E0%2E8994-f2c27da23&version=7592546-570471557d92948f58893deb
+Oct 02, 2024 10:20:22.800 [548379749880] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.7s) 200 response from GET https://plex.tv/api/codecs/h264_decoder?build=linux-aarch64-standard&deviceId=b12a6d11-998d-4164-83ee-7d242df1a943&oldestPreviousVersion=1%2E41%2E0%2E8994-f2c27da23&version=7592546-570471557d92948f58893deb
+Oct 02, 2024 10:20:22.801 [548379602424] DEBUG - [GetFile/HCl#3] HTTP requesting GET https://downloads.plex.tv/codecs/7592546-570471557d92948f58893deb/linux-aarch64-standard/libh264_decoder.so
+Oct 02, 2024 10:20:23.123 [548379749880] DEBUG - [HttpClient/HCl#3] HTTP/2.0 (0.3s) 200 response from GET https://downloads.plex.tv/codecs/7592546-570471557d92948f58893deb/linux-aarch64-standard/libh264_decoder.so
+Oct 02, 2024 10:20:23.221 [548470329400] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 5992 bytes read:34090 seeks:2 nb_streams:4
+Oct 02, 2024 10:20:23.236 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 02, 2024 10:20:23.236 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 02, 2024 10:20:23.237 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Oct 02, 2024 10:20:23.240 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Oct 02, 2024 10:20:23.241 [548470329400] DEBUG - [FFMPEG] - unknown SEI type 2
+Oct 02, 2024 10:20:23.241 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.242 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.242 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 2
+Oct 02, 2024 10:20:23.242 [548470329400] DEBUG - [FFMPEG] - unknown SEI type 2
+Oct 02, 2024 10:20:23.242 [548470329400] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Oct 02, 2024 10:20:23.247 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.247 [548470329400] DEBUG - [FFMPEG] - no picture 
+Oct 02, 2024 10:20:23.293 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.293 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.293 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.297 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.297 [548470329400] DEBUG - [FFMPEG] - no picture 
+Oct 02, 2024 10:20:23.305 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.305 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.305 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.309 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.309 [548470329400] DEBUG - [FFMPEG] - no picture 
+Oct 02, 2024 10:20:23.323 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.323 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.323 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.326 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.340 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.340 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.340 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.344 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.357 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.357 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.357 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.361 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.375 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.375 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.375 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.375 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.389 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.389 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.389 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.389 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.403 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.403 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.403 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.403 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.417 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.417 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.417 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.417 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.425 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.426 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.426 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.426 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.440 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.440 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.440 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.440 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.454 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.454 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.454 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.454 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.468 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.468 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.468 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.468 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.482 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.482 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.482 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.482 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.496 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.496 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.496 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.496 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.510 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.510 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.510 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.510 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.524 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.524 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.524 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.525 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.533 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.533 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.533 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.533 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.547 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.547 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.547 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+Oct 02, 2024 10:20:23.547 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.562 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.562 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.562 [548470329400] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Oct 02, 2024 10:20:23.562 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.576 [548470329400] DEBUG - [FFMPEG] - ct_type:1 pic_struct:0
+Oct 02, 2024 10:20:23.576 [548470329400] DEBUG - [FFMPEG] - All info found
+Oct 02, 2024 10:20:23.595 [548470329400] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 114434 bytes read:174249 seeks:2 frames:101
+Oct 02, 2024 10:20:23.619 [548470329400] DEBUG - [MI]  * cb1f67c66fd4ec077e92c297f42e92932e5786b8 [mkv h264/eac3] Duration: 7263360ms, 1280x720 (1.777778) 25.000fps, bitrate=1164kbps, audio channels=6, optimizedForStreaming=0 ("/movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv")
+Oct 02, 2024 10:20:23.620 [548470329400] DEBUG - [MI] Chapters had generic titles, clearing.
+Oct 02, 2024 10:20:23.621 [548470329400] DEBUG - [MI] Closing input file: "/movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv"
+Oct 02, 2024 10:20:23.623 [548470329400] DEBUG - Committing media stream changes for part 1
+Oct 02, 2024 10:20:23.627 [548470329400] DEBUG - Updating media item 1, size=1057658555, metadata_item_id=1
+Oct 02, 2024 10:20:23.627 [548470329400] DEBUG - Updating part with ID=1 [/movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv]
+Oct 02, 2024 10:20:23.628 [548375952888] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=1&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Oct 02, 2024 10:20:23.632 [548379749880] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=1&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Oct 02, 2024 10:20:23.633 [548375952888] DEBUG - [HCl#5] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=1&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Oct 02, 2024 10:20:23.637 [548379749880] DEBUG - [HttpClient/HCl#5] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=1&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Oct 02, 2024 10:20:23.641 [548470329400] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Oct 02, 2024 10:20:23.641 [548470329400] DEBUG - [HCl#6] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Oct 02, 2024 10:20:23.643 [548379749880] DEBUG - [HttpClient/HCl#6] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Oct 02, 2024 10:20:23.643 [548470329400] DEBUG - Updating metadata item (save) (Nunakuzhi) with ID 1
