@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 from datetime import datetime
 import pytz
+from log2splunk import log2splunk
 
 # Set the GPIO mode
 GPIO.setmode(GPIO.BCM)
@@ -34,6 +35,13 @@ try:
     # Print the current IST time once at the end of the loop
     ist_now = datetime.now(pytz.timezone('Asia/Kolkata'))
     print("Loop completed at:", ist_now.strftime('%Y-%m-%d %H:%M:%S %Z%z'))
+    data = {
+        "post_time": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        "job_name": "fish-feeder",
+        "job_status": "success",  # Or "Completed", "Failed", etc.
+        "job_error": None,  # Use error message if the job fails, or None if no error
+    } 
+    log2splunk(data)
 
 finally:
     # Clean up the GPIO settings
