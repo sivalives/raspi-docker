@@ -1,7 +1,7 @@
-Oct 02, 2024 10:20:23.997 [547714301432] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT 00:00
-Oct 02, 2024 10:20:23.998 [547714301432] INFO - Linux version: 6.6.20+rpt-rpi-v8, language: en-US
-Oct 02, 2024 10:20:23.998 [547714301432] INFO - Processor: 4-core AArch64
-Oct 02, 2024 10:20:23.998 [547714301432] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 1
-Oct 02, 2024 10:20:23.999 [547794481208] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
-Oct 02, 2024 10:20:24.528 [547794481208] DEBUG - Matcher: found 1 auxiliary files for Nunakuzhi
-Oct 02, 2024 10:20:24.528 [547794481208] DEBUG - Matcher: no sidecar subtitle files found for /movies/share/[MS] Nunakkuzhi (2024) Malayalam HDRip 720p .mkv
+Oct 23, 2024 04:00:23.610 [547805388280] INFO - Plex Media Scanner v1.41.0.8994-f2c27da23 - Docker Docker Container (LinuxServer.io) aarch64 - build: linux-aarch64 - GMT 00:00
+Oct 23, 2024 04:00:23.611 [547805388280] INFO - Linux version: 6.6.20+rpt-rpi-v8, language: en-US
+Oct 23, 2024 04:00:23.611 [547805388280] INFO - Processor: 4-core AArch64
+Oct 23, 2024 04:00:23.611 [547805388280] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 2
+Oct 23, 2024 04:00:23.613 [547885568056] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Oct 23, 2024 04:00:24.213 [547885568056] DEBUG - Matcher: found 0 auxiliary files for Adios Amigo
+Oct 23, 2024 04:00:24.213 [547885568056] DEBUG - Matcher: no sidecar subtitle files found for /movies/share/[MS] Adios Amigo (2024) Malayalam 720p NF WEBDL x264.mkv

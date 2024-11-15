@@ -1,23 +1,24 @@
-2024-10-02 09:27:17,255 (7fa4b9d890) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: f2c27da (Mon Sep 23 10:05:42 UTC 2024)
-2024-10-02 09:27:17,257 (7fa4b9d890) :  DEBUG (core:361) - Using the elevated policy
-2024-10-02 09:27:17,258 (7fa4b9d890) :  DEBUG (core:450) - Starting runtime component.
-2024-10-02 09:27:17,265 (7fa4b9d890) :  DEBUG (core:450) - Starting caching component.
-2024-10-02 09:27:17,266 (7fa4b9d890) :  DEBUG (core:450) - Starting data component.
-2024-10-02 09:27:17,267 (7fa4b9d890) :  DEBUG (core:450) - Starting networking component.
-2024-10-02 09:27:17,269 (7fa4b9d890) :  DEBUG (networking:266) - No cookie jar found
-2024-10-02 09:27:17,272 (7fa4b9d890) :  DEBUG (networking:434) - Setting the default network timeout to 20.0
-2024-10-02 09:27:17,276 (7fa4b9d890) :  DEBUG (core:450) - Starting localization component.
-2024-10-02 09:27:17,277 (7fa4b9d890) :  INFO (localization:409) - Setting the default locale to en-us
-2024-10-02 09:27:17,278 (7fa4b9d890) :  DEBUG (core:450) - Starting messaging component.
-2024-10-02 09:27:17,281 (7fa4b9d890) :  DEBUG (core:450) - Starting debugging component.
-2024-10-02 09:27:17,282 (7fa4b9d890) :  DEBUG (core:450) - Starting services component.
-2024-10-02 09:27:17,284 (7fa4b9d890) :  DEBUG (core:450) - Starting myplex component.
-2024-10-02 09:27:17,285 (7fa4b9d890) :  DEBUG (core:450) - Starting notifications component.
-2024-10-02 09:27:17,286 (7fa1727b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.themoviedb'
-2024-10-02 09:27:18,211 (7fa4b9d890) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.themoviedb in namespace 'metadata'
-2024-10-02 09:27:18,249 (7fa4b9d890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
-2024-10-02 09:27:18,276 (7fa4b9d890) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
-2024-10-02 09:27:18,285 (7fa4b9d890) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+2024-10-08 12:27:26,768 (7fb13ae890) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: f2c27da (Mon Sep 23 10:05:42 UTC 2024)
+2024-10-08 12:27:26,770 (7fb13ae890) :  DEBUG (core:361) - Using the elevated policy
+2024-10-08 12:27:26,772 (7fb13ae890) :  DEBUG (core:450) - Starting runtime component.
+2024-10-08 12:27:26,780 (7fb13ae890) :  DEBUG (core:450) - Starting caching component.
+2024-10-08 12:27:26,781 (7fb13ae890) :  DEBUG (core:450) - Starting data component.
+2024-10-08 12:27:26,782 (7fb13ae890) :  DEBUG (core:450) - Starting networking component.
+2024-10-08 12:27:26,787 (7fb13ae890) :  DEBUG (networking:262) - Loaded HTTP cookies
+2024-10-08 12:27:26,790 (7fb13ae890) :  DEBUG (caching:108) - No info file found, trashing the cache folder
+2024-10-08 12:27:26,803 (7fb13ae890) :  DEBUG (networking:434) - Setting the default network timeout to 20.0
+2024-10-08 12:27:26,807 (7fb13ae890) :  DEBUG (core:450) - Starting localization component.
+2024-10-08 12:27:26,808 (7fb13ae890) :  INFO (localization:409) - Setting the default locale to en-us
+2024-10-08 12:27:26,809 (7fb13ae890) :  DEBUG (core:450) - Starting messaging component.
+2024-10-08 12:27:26,812 (7fb13ae890) :  DEBUG (core:450) - Starting debugging component.
+2024-10-08 12:27:26,813 (7fb13ae890) :  DEBUG (core:450) - Starting services component.
+2024-10-08 12:27:26,815 (7fb13ae890) :  DEBUG (core:450) - Starting myplex component.
+2024-10-08 12:27:26,816 (7fadf25b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.themoviedb'
+2024-10-08 12:27:26,818 (7fb13ae890) :  DEBUG (core:450) - Starting notifications component.
+2024-10-08 12:27:27,830 (7fb13ae890) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.themoviedb in namespace 'metadata'
+2024-10-08 12:27:27,872 (7fb13ae890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2024-10-08 12:27:27,903 (7fb13ae890) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2024-10-08 12:27:27,912 (7fb13ae890) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
   File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
     json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
   File "/usr/lib/plexmediaserver/Resources/Plug-ins-f2c27da23/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
@@ -38,34 +39,34 @@
     raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
 HTTPError: HTTP Error 404: Not Found
 
-2024-10-02 09:27:18,338 (7fa4b9d890) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
-2024-10-02 09:27:18,339 (7fa14ebb08) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
-2024-10-02 09:27:18,344 (7fa14ebb08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
-2024-10-02 09:27:18,348 (7fa4b9d890) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
-2024-10-02 09:27:18,352 (7fa4b9d890) :  DEBUG (core:150) - Finished starting framework core
-2024-10-02 09:27:18,353 (7fa14a5b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400'
-2024-10-02 09:27:18,355 (7fa4b9d890) :  DEBUG (core:560) - Loading plug-in code
-2024-10-02 09:27:19,343 (7fa14ebb08) :  DEBUG (services:362) - Loaded services
-2024-10-02 09:27:19,588 (7fa14a5b08) :  DEBUG (core:538) - Machine identifier is fe9e79c742baa9f0ccb0dcfddce46939140831b1
-2024-10-02 09:27:19,784 (7fa14a5b08) :  DEBUG (core:539) - Server version is 1.41.0.8994-f2c27da23
-2024-10-02 09:27:19,789 (7fa14c8b08) :  DEBUG (services:438) - No shared code to load
-2024-10-02 09:27:20,866 (7fa4b9d890) :  DEBUG (core:566) - Finished loading plug-in code
-2024-10-02 09:27:20,868 (7fa4b9d890) :  DEBUG (messaging:69) - Exposing function GetImdbId for remote access
-2024-10-02 09:27:20,869 (7fa4b9d890) :  DEBUG (messaging:69) - Exposing function GetTvdbId for remote access
-2024-10-02 09:27:20,870 (7fa4b9d890) :  DEBUG (messaging:69) - Exposing function GetTvRageId for remote access
-2024-10-02 09:27:20,871 (7fa4b9d890) :  DEBUG (messaging:69) - Exposing function GetTMDbSearchResults for remote access
-2024-10-02 09:27:20,871 (7fa4b9d890) :  DEBUG (messaging:69) - Exposing function GetTMDbMetadata for remote access
-2024-10-02 09:27:20,873 (7fa4b9d890) :  DEBUG (agentkit:1132) - Creating new agent class called TMDbAgent
-2024-10-02 09:27:20,879 (7fa4b9d890) :  DEBUG (agentkit:937) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': ['com.plexapp.agents.localmedia'], 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}]
-2024-10-02 09:27:20,884 (7fa4b9d890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo2CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczI5CmNvbS5wbGV4YXBwLmFnZW50cy50aGVtb3ZpZWRiczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzcjQKczEyCmFjY2VwdHNfZnJvbW5zMTQKZmFsbGJhY2tfYWdlbnRuczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjFzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTgKVGhlIE1vdmllIERhdGFiYXNlczQKbmFtZTEKczUKTW92aWUxCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYTI2CnMyCmVuczIKY3NzMgpkYXMyCmRlczIKZWxzMgplc3MyCmZpczIKZnJzMgpoZXMyCmhyczIKaHVzMgppdHMyCmx2czIKbHRzMgpubHMyCm5vczIKcGxzMgpwdHMyCnJ1czIKc2tzMgpzdnMyCnRoczIKdHJzMgp2aXMyCnpoczIKa29yMAo_'
-2024-10-02 09:27:36,856 (7fa4b9d890) :  DEBUG (agentkit:1132) - Creating new agent class called TMDbAgent
-2024-10-02 09:27:36,869 (7fa4b9d890) :  DEBUG (agentkit:937) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': ['com.plexapp.agents.localmedia'], 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}, {'media_types': ['TV_Show'], 'accepts_from': ['com.plexapp.agents.localmedia', 'com.plexapp.agents.thetvdb'], 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb'], 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}]
-2024-10-02 09:27:36,876 (7fa4b9d890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxMApkaWN0Cmxpc3QKZGljdApsaXN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczI5CmNvbS5wbGV4YXBwLmFnZW50cy50aGVtb3ZpZWRiczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjYKMTAKcjMKczExCm1lZGlhX3R5cGVzcjQKczEyCmFjY2VwdHNfZnJvbW5zMTQKZmFsbGJhY2tfYWdlbnRuczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjFzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTgKVGhlIE1vdmllIERhdGFiYXNlczQKbmFtZTEKczUKTW92aWUxCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYTI2CnMyCmVuczIKY3NzMgpkYXMyCmRlczIKZWxzMgplc3MyCmZpczIKZnJzMgpoZXMyCmhyczIKaHVzMgppdHMyCmx2czIKbHRzMgpubHMyCm5vczIKcGxzMgpwdHMyCnJ1czIKc2tzMgpzdnMyCnRoczIKdHJzMgp2aXMyCnpoczIKa28xMApyNwpzMTEKbWVkaWFfdHlwZXNyOApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI5CnMxNApjb250cmlidXRlc190b3I1CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE4ClRoZSBNb3ZpZSBEYXRhYmFzZXM0Cm5hbWUxCnM3ClRWX1Nob3cyCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYXMyNgpjb20ucGxleGFwcC5hZ2VudHMudGhldHZkYjEKczI2CmNvbS5wbGV4YXBwLmFnZW50cy50aGV0dmRicjAK'
-2024-10-02 09:27:36,931 (7fa4b9d890) :  INFO (core:611) - Started plug-in
-2024-10-02 09:27:36,932 (7fa4b9d890) :  DEBUG (socketinterface:160) - Starting socket server
-2024-10-02 09:27:36,936 (7fa4b9d890) :  DEBUG (runtime:1117) - Created a thread named 'start'
-2024-10-02 09:27:36,938 (7fa4b9d890) :  INFO (socketinterface:184) - Socket server started on port 43667
-2024-10-02 09:27:36,939 (7fa4b9d890) :  INFO (pipeinterface:25) - Entering run loop
-2024-10-02 09:27:36,940 (7fa4b9d890) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
-2024-10-02 09:27:36,949 (7fa4b9d890) :  DEBUG (runtime:814) - Found route matching /:/prefixes
-2024-10-02 09:27:36,953 (7fa4b9d890) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 154 bytes
+2024-10-08 12:27:27,971 (7fadcf7b08) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
+2024-10-08 12:27:27,972 (7fb13ae890) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+2024-10-08 12:27:27,977 (7fadcf7b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2024-10-08 12:27:27,984 (7fb13ae890) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
+2024-10-08 12:27:27,987 (7fb13ae890) :  DEBUG (core:150) - Finished starting framework core
+2024-10-08 12:27:27,988 (7fb13ae890) :  DEBUG (core:560) - Loading plug-in code
+2024-10-08 12:27:27,986 (7fadcb1b08) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400'
+2024-10-08 12:27:28,704 (7fadcf7b08) :  DEBUG (services:362) - Loaded services
+2024-10-08 12:27:28,705 (7fadcb1b08) :  DEBUG (core:538) - Machine identifier is fe9e79c742baa9f0ccb0dcfddce46939140831b1
+2024-10-08 12:27:28,713 (7fadcb1b08) :  DEBUG (core:539) - Server version is 1.41.0.8994-f2c27da23
+2024-10-08 12:27:28,813 (7fadcd4b08) :  DEBUG (services:438) - No shared code to load
+2024-10-08 12:27:30,651 (7fb13ae890) :  DEBUG (core:566) - Finished loading plug-in code
+2024-10-08 12:27:30,653 (7fb13ae890) :  DEBUG (messaging:69) - Exposing function GetImdbId for remote access
+2024-10-08 12:27:30,654 (7fb13ae890) :  DEBUG (messaging:69) - Exposing function GetTvdbId for remote access
+2024-10-08 12:27:30,656 (7fb13ae890) :  DEBUG (messaging:69) - Exposing function GetTvRageId for remote access
+2024-10-08 12:27:30,657 (7fb13ae890) :  DEBUG (messaging:69) - Exposing function GetTMDbSearchResults for remote access
+2024-10-08 12:27:30,658 (7fb13ae890) :  DEBUG (messaging:69) - Exposing function GetTMDbMetadata for remote access
+2024-10-08 12:27:30,660 (7fb13ae890) :  DEBUG (agentkit:1132) - Creating new agent class called TMDbAgent
+2024-10-08 12:27:30,667 (7fb13ae890) :  DEBUG (agentkit:937) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': ['com.plexapp.agents.localmedia'], 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}]
+2024-10-08 12:27:30,672 (7fb13ae890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo2CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczI5CmNvbS5wbGV4YXBwLmFnZW50cy50aGVtb3ZpZWRiczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzcjQKczEyCmFjY2VwdHNfZnJvbW5zMTQKZmFsbGJhY2tfYWdlbnRuczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjFzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTgKVGhlIE1vdmllIERhdGFiYXNlczQKbmFtZTEKczUKTW92aWUxCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYTI2CnMyCmVuczIKY3NzMgpkYXMyCmRlczIKZWxzMgplc3MyCmZpczIKZnJzMgpoZXMyCmhyczIKaHVzMgppdHMyCmx2czIKbHRzMgpubHMyCm5vczIKcGxzMgpwdHMyCnJ1czIKc2tzMgpzdnMyCnRoczIKdHJzMgp2aXMyCnpoczIKa29yMAo_'
+2024-10-08 12:27:30,727 (7fb13ae890) :  DEBUG (agentkit:1132) - Creating new agent class called TMDbAgent
+2024-10-08 12:27:30,740 (7fb13ae890) :  DEBUG (agentkit:937) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': ['com.plexapp.agents.localmedia'], 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}, {'media_types': ['TV_Show'], 'accepts_from': ['com.plexapp.agents.localmedia', 'com.plexapp.agents.thetvdb'], 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb'], 'languages': ['en', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hr', 'hu', 'it', 'lv', 'lt', 'nl', 'no', 'pl', 'pt', 'ru', 'sk', 'sv', 'th', 'tr', 'vi', 'zh', 'ko'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'The Movie Database'}]
+2024-10-08 12:27:30,747 (7fb13ae890) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxMApkaWN0Cmxpc3QKZGljdApsaXN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczI5CmNvbS5wbGV4YXBwLmFnZW50cy50aGVtb3ZpZWRiczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjYKMTAKcjMKczExCm1lZGlhX3R5cGVzcjQKczEyCmFjY2VwdHNfZnJvbW5zMTQKZmFsbGJhY2tfYWdlbnRuczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjFzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTgKVGhlIE1vdmllIERhdGFiYXNlczQKbmFtZTEKczUKTW92aWUxCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYTI2CnMyCmVuczIKY3NzMgpkYXMyCmRlczIKZWxzMgplc3MyCmZpczIKZnJzMgpoZXMyCmhyczIKaHVzMgppdHMyCmx2czIKbHRzMgpubHMyCm5vczIKcGxzMgpwdHMyCnJ1czIKc2tzMgpzdnMyCnRoczIKdHJzMgp2aXMyCnpoczIKa28xMApyNwpzMTEKbWVkaWFfdHlwZXNyOApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI5CnMxNApjb250cmlidXRlc190b3I1CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE4ClRoZSBNb3ZpZSBEYXRhYmFzZXM0Cm5hbWUxCnM3ClRWX1Nob3cyCnMyOQpjb20ucGxleGFwcC5hZ2VudHMubG9jYWxtZWRpYXMyNgpjb20ucGxleGFwcC5hZ2VudHMudGhldHZkYjEKczI2CmNvbS5wbGV4YXBwLmFnZW50cy50aGV0dmRicjAK'
+2024-10-08 12:27:30,794 (7fb13ae890) :  INFO (core:611) - Started plug-in
+2024-10-08 12:27:30,795 (7fb13ae890) :  DEBUG (socketinterface:160) - Starting socket server
+2024-10-08 12:27:30,799 (7fb13ae890) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2024-10-08 12:27:30,801 (7fb13ae890) :  INFO (socketinterface:184) - Socket server started on port 43817
+2024-10-08 12:27:30,803 (7fb13ae890) :  INFO (pipeinterface:25) - Entering run loop
+2024-10-08 12:27:30,804 (7fb13ae890) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
+2024-10-08 12:27:30,815 (7fb13ae890) :  DEBUG (runtime:814) - Found route matching /:/prefixes
+2024-10-08 12:27:30,820 (7fb13ae890) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 154 bytes

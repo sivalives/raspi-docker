@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 import pytz
 from log2splunk import log2splunk
+from log2mqqt import publish2mqqt
 
 # Set the GPIO mode
 GPIO.setmode(GPIO.BCM)
@@ -40,9 +41,11 @@ try:
         "job_name": "fish-feeder",
         "job_status": "success",  # Or "Completed", "Failed", etc.
         "job_error": None,  # Use error message if the job fails, or None if no error
-    } 
-    log2splunk(data)
-
+    }
+    mqqt_data = {"message_type": "fish_data","message":data}
+    #Publish to MQQT for retrieval from splunk Asyc, as Mac might sleep all the time
+    publish2mqqt(mqqt_data)
+    
 finally:
     # Clean up the GPIO settings
     pwm.stop()

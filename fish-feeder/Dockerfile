@@ -5,6 +5,9 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt /bin/fish/requirements.txt
 COPY servo_motor_180.py /bin/fish/servo_motor_180.py
 COPY dropbox_utils_v2.py /bin/fish/dropbox_utils_v2.py
+COPY log2splunk.py /bin/fish/log2splunk.py
+##COPY wake_mac.py  /bin/fish/wake_mac.py
+COPY log2mqqt.py /bin/fish/log2mqqt.py
 ADD cronfile /etc/cron.d/fish-cron
 RUN touch /var/log/cron.log
 RUN chmod 0644 /etc/cron.d/fish-cron

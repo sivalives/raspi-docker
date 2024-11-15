@@ -1,5 +1,4 @@
-Oct 02, 2024 10:17:48.217 [547720075984] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1727863712 Duration: 556 UserId: sivalives@gmail.com Version: 1.41.0.8994-f2c27da23
-Oct 02, 2024 10:17:48.220 [547751639184] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Oct 02, 2024 10:17:48.591 [547719887568] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.4s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Oct 02, 2024 10:17:48.591 [547751639184] INFO - Successfully reported session health
-Oct 02, 2024 10:17:48.591 [547751639184] INFO - Crash Uploader - Processing Complete.
+Nov 14, 2024 07:04:05.577 [547609352912] INFO - Crash Uploader - Platform: Linux ServerUUID: fe9e79c742baa9f0ccb0dcfddce46939140831b1 UserId: sivalives@gmail.com Version: 1.41.0.8994-f2c27da23
+Nov 14, 2024 07:04:05.578 [547609352912] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.41.0.8994-f2c27da23
+Nov 14, 2024 07:04:05.578 [547609352912] INFO - Post-processed minidump directory: /tmp
+Nov 14, 2024 07:04:05.603 [547640916112] INFO - Crash Uploader - Processing Complete.

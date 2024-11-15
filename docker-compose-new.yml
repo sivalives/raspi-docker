@@ -1,0 +1,67 @@
+version: '3.5'
+services:
+  spunk-uf:
+    image: sivalives/splunk-uf
+    tty: true
+    container_name: splunk-uf
+    restart: always
+    build:
+      context: ./splunkforwarder
+      args:
+        SPKPASS: ${SPKPASS} #From.enf file
+      dockerfile: Dockerfile
+    ports:
+      - 8089:8089
+      - 9997:9997
+    networks:
+      - mynetwork
+    volumes:
+      - opt-splunk-etc:/opt/splunkforwarder/etc
+      - opt-splunk-var:/opt/splunkforwarder/var
+  
+  fish-feeder:
+    build:
+      context: ./fish-feeder
+      dockerfile: Dockerfile
+    container_name: fish-feeder
+    image: sivalives/fish-feeder
+    privileged: true
+    restart: always
+    volumes:
+      - fish-feeder-data:/var/log
+    networks:
+      - mynetwork
+
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    restart: always
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mqqt/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - mqqt-data:/mosquitto/data
+      - mqqt-logs:/mosquitto/log
+    networks:
+      - mynetwork
+
+  mqqt-publisher:
+    container_name: mqqt-publisher
+    build: ./mqqt/mqqt-publisher
+    depends_on:
+      - mosquitto
+    ports:
+      - "5000:5000"
+    networks:
+      - mynetwork
+       
+networks:
+  mynetwork:
+volumes:
+  opt-splunk-etc:
+  opt-splunk-var:
+  fish-feeder-data:
+  mqqt-data:
+  mqqt-logs:
+

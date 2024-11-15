@@ -1,49 +1,310 @@
-<SessionReport version="2" startTime="0" startTimestamp="Oct 02, 2024 11:22:44.505" key="/library/metadata/1" session="887xwo0qmhnluti1saovh5lr" transcode="a5vnkxb5kymi6ojgj0bxfg1c">
-<User id="1" thumb="https://plex.tv/users/69c97b788ac90d09/avatar?c=1727861423" title="sivalives" />
-<Player address="10.0.0.14" device="Linux" machineIdentifier="cnet22xemi869rgmhwdqcx4h" model="bundled" platform="Chrome" platformVersion="128.0" product="Plex Web" title="Chrome" version="4.136.1" local="1" relayed="0" secure="1" userID="1" />
+<SessionReport version="2" startTime="0" startTimestamp="Oct 04, 2024 15:03:52.444" key="/library/metadata/2" session="1b3693c19b0fe16e-com-plexapp-android" transcode="1b3693c19b0fe16e-com-plexapp-android">
+<User id="1" thumb="https://plex.tv/users/69c97b788ac90d09/avatar?c=1728051574" title="sivalives" />
+<Player address="10.0.0.12" device="BRAVIA 4K GB" machineIdentifier="1b3693c19b0fe16e-com-plexapp-android" platform="Android" platformVersion="9" product="Plex for Android (TV)" version="10.22.0.1579" local="1" relayed="0" secure="1" userID="1" />
 <Variants>
-<Variant id="29d6676f-8667-4627-8c86-9bc9ef688904" targetBitrate="2716" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="eac3" videoDecision="copy" audioDecision="transcode" protocol="dash" container="mp4" videoCodec="h264" audioCodec="aac" audioChannels="2" transcodeHwRequested="0" transcodeHwFullPipeline="0">
-<Media id="1" videoProfile="main" audioChannels="2" audioCodec="aac" bitrate="1421" container="mp4" duration="7263360" height="720" optimizedForStreaming="1" protocol="dash" videoCodec="h264" videoFrameRate="PAL" videoResolution="720p" width="1280" selected="1">
-<Part id="1" videoProfile="main" bitrate="1421" container="mp4" duration="7263360" height="720" optimizedForStreaming="1" protocol="dash" width="1280" decision="transcode" selected="1">
-<Stream bitDepth="8" bitrate="1165" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" colorPrimaries="bt709" colorRange="tv" colorSpace="bt709" colorTrc="bt709" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="www.1TamilMV.tf (720p H.264)" frameRate="25" hasScalingMatrix="0" height="720" id="1" level="41" profile="main" refFrames="4" scanType="progressive" streamType="1" title="www.1TamilMV.tf" width="1280" decision="copy" location="segments-video" />
-<Stream bitrate="256" bitrateMode="cbr" channels="2" codec="aac" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (EAC3 5.1)" extendedDisplayTitle="www.1TamilMV.tf - [DD+5.1 - 192Kbps] (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; EAC3)" forced="1" id="2" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-audio" />
+<Variant id="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="4200e02a-e6ba-466b-a78b-8e8b94f068d4" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="303867ff-04e4-4687-a3d8-31ff4f4c01b1" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="40e98609-98a8-47cb-ab89-a7075d9345d0" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="cefa273c-74fe-415e-8fda-3157444c9f2b" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="b17761ab-920c-4e85-bec0-486e13ee070e" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="65b2776d-cc1a-4341-9fe5-042ca0dccea4" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="3990677a-2867-4698-b84c-cd6c1a08e479" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="15a72f46-409f-4d71-90d1-513c223ed174" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="ea3c0490-d2f3-4240-a7c1-1eafedd67e1d" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="5373ac07-170d-4669-b65d-bf07229b7696" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="659b8061-c3be-4050-9c53-4a88580c586c" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="023a5a36-ecf5-4b65-8aa9-0ac2c8cda850" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+<Variant id="72042b20-9e56-4883-8dab-445801a124a4" targetBitrate="4837" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="copy" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="h264" audioCodec="opus" audioChannels="6" width="1280" height="720" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="he-aac" id="2" videoProfile="main" audioChannels="6" audioCodec="opus" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" videoCodec="h264" videoFrameRate="24p" videoResolution="720p" width="1280" selected="1">
+<Part audioProfile="he-aac" id="2" videoProfile="main" bitrate="2690" container="mkv" duration="9373995" height="720" protocol="hls" width="1280" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="1916" chromaLocation="left" chromaSubsampling="4:2:0" codec="h264" codedHeight="720" codedWidth="1280" default="1" displayTitle="720p (H.264)" extendedDisplayTitle="720p (H.264)" frameRate="24" hasScalingMatrix="0" height="720" id="5" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" level="31" profile="main" refFrames="3" scanType="progressive" streamType="1" width="1280" decision="copy" location="segments-av" />
+<Stream bitrate="774" bitrateMode="cbr" channels="6" codec="opus" default="1" displayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" extendedDisplayTitle="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330; (HE-AAC 5.1)" id="6" language="&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;" languageCode="mal" languageTag="ml" selected="1" streamType="2" decision="transcode" location="segments-av" />
 </Part>
 </Media>
 </Variant>
 </Variants>
 <SegmentList>
-<Segment duration="6000" startOffset="0" endOffset="6000">
-<File name="chunk-stream0-00001.m4s" type="video">
-<FileVariant size="218611" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
-</File>
-<File name="chunk-stream1-00001.m4s" type="audio">
-<FileVariant size="29147" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
+<Segment duration="9999" startOffset="0" endOffset="9999">
+<File name="media-00000.ts" type="av">
+<FileVariant size="1482304" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
 </File>
 <Timelines>
-<Transcode startTime="422" endTime="2369" complete="1" fileType="video" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
-<Transcode startTime="422" endTime="2369" complete="1" fileType="audio" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
+<Transcode startTime="222" endTime="3232" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
+<Download startTime="3369" endTime="5088" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
 </Timelines>
 </Segment>
-<Segment duration="0" startOffset="-1" endOffset="-1">
+<Segment duration="9998" startOffset="10000" endOffset="19999">
+<File name="media-00001.ts" type="av">
+<FileVariant size="1456638" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
+</File>
 <Timelines>
-<Download startTime="2447" fileType="audio" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
-<Download startTime="2448" fileType="video" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
+<Transcode startTime="3232" endTime="6148" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
 </Timelines>
 </Segment>
-<Segment duration="4000" startOffset="6000" endOffset="10000">
-<File name="chunk-stream0-00002.m4s" type="video">
-<FileVariant size="157746" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
-</File>
-<File name="chunk-stream1-00002.m4s" type="audio">
-<FileVariant size="27306" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
+<Segment duration="9999" startOffset="30000" endOffset="39999">
+<File name="media-00003.ts" type="av">
+<FileVariant size="4087608" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
 </File>
 <Timelines>
-<Transcode startTime="2369" endTime="3675" complete="1" fileType="video" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
-<Transcode startTime="2369" endTime="3675" complete="1" fileType="audio" variant="29d6676f-8667-4627-8c86-9bc9ef688904" />
+<Download startTime="6384" endTime="12731" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72">
+<Pause type="segmentWait" startTime="6384" endTime="12694" />
+</Download>
+<Transcode startTime="9351" endTime="12598" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
+</Timelines>
+</Segment>
+<Segment duration="9998" startOffset="20000" endOffset="29999">
+<File name="media-00002.ts" type="av">
+<FileVariant size="4165546" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
+</File>
+<Timelines>
+<Transcode startTime="6148" endTime="9351" complete="1" fileType="av" variant="2c4ad6eb-2ea7-4cef-9e69-e6db7e49ef72" />
+</Timelines>
+</Segment>
+<Segment duration="11999" startOffset="1498000" endOffset="1509999">
+<File name="media-00150.ts" type="av">
+<FileVariant size="4872728" variant="4200e02a-e6ba-466b-a78b-8e8b94f068d4" />
+</File>
+<Timelines>
+<Download startTime="12799" endTime="17130" complete="1" fileType="av" variant="4200e02a-e6ba-466b-a78b-8e8b94f068d4">
+<Pause type="segmentWait" startTime="12799" endTime="17105" />
+</Download>
+<Transcode startTime="12797" endTime="17046" complete="1" fileType="av" variant="4200e02a-e6ba-466b-a78b-8e8b94f068d4" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="2488000" endOffset="2499999">
+<File name="media-00249.ts" type="av">
+<FileVariant size="4759642" variant="303867ff-04e4-4687-a3d8-31ff4f4c01b1" />
+</File>
+<Timelines>
+<Download startTime="17301" endTime="21619" complete="1" fileType="av" variant="303867ff-04e4-4687-a3d8-31ff4f4c01b1">
+<Pause type="segmentWait" startTime="17301" endTime="21607" />
+</Download>
+<Transcode startTime="17299" endTime="21534" complete="1" fileType="av" variant="303867ff-04e4-4687-a3d8-31ff4f4c01b1" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="3628000" endOffset="3639999">
+<File name="media-00363.ts" type="av">
+<FileVariant size="4787975" variant="40e98609-98a8-47cb-ab89-a7075d9345d0" />
+</File>
+<Timelines>
+<Download startTime="21697" endTime="25828" complete="1" fileType="av" variant="40e98609-98a8-47cb-ab89-a7075d9345d0">
+<Pause type="segmentWait" startTime="21697" endTime="25803" />
+</Download>
+<Transcode startTime="21696" endTime="25762" complete="1" fileType="av" variant="40e98609-98a8-47cb-ab89-a7075d9345d0" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="4678000" endOffset="4689999">
+<File name="media-00468.ts" type="av">
+<FileVariant size="3044528" variant="cefa273c-74fe-415e-8fda-3157444c9f2b" />
+</File>
+<Timelines>
+<Download startTime="25959" endTime="30179" complete="1" fileType="av" variant="cefa273c-74fe-415e-8fda-3157444c9f2b">
+<Pause type="segmentWait" startTime="25959" endTime="30165" />
+</Download>
+<Transcode startTime="25958" endTime="30066" complete="1" fileType="av" variant="cefa273c-74fe-415e-8fda-3157444c9f2b" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="5818000" endOffset="5829999">
+<File name="media-00582.ts" type="av">
+<FileVariant size="3337674" variant="b17761ab-920c-4e85-bec0-486e13ee070e" />
+</File>
+<Timelines>
+<Download startTime="30377" endTime="34299" complete="1" fileType="av" variant="b17761ab-920c-4e85-bec0-486e13ee070e">
+<Pause type="segmentWait" startTime="30377" endTime="34283" />
+</Download>
+<Transcode startTime="30376" endTime="34229" complete="1" fileType="av" variant="b17761ab-920c-4e85-bec0-486e13ee070e" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="6838000" endOffset="6849999">
+<File name="media-00684.ts" type="av">
+<FileVariant size="3085190" variant="65b2776d-cc1a-4341-9fe5-042ca0dccea4" />
+</File>
+<Timelines>
+<Download startTime="34412" endTime="38434" complete="1" fileType="av" variant="65b2776d-cc1a-4341-9fe5-042ca0dccea4">
+<Pause type="segmentWait" startTime="34412" endTime="38417" />
+</Download>
+<Transcode startTime="34411" endTime="38322" complete="1" fileType="av" variant="65b2776d-cc1a-4341-9fe5-042ca0dccea4" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="7108000" endOffset="7119999">
+<File name="media-00711.ts" type="av">
+<FileVariant size="3408989" variant="3990677a-2867-4698-b84c-cd6c1a08e479" />
+</File>
+<Timelines>
+<Download startTime="38486" endTime="42810" complete="1" fileType="av" variant="3990677a-2867-4698-b84c-cd6c1a08e479">
+<Pause type="segmentWait" startTime="38486" endTime="42792" />
+</Download>
+<Transcode startTime="38484" endTime="42729" complete="1" fileType="av" variant="3990677a-2867-4698-b84c-cd6c1a08e479" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="7978000" endOffset="7989999">
+<File name="media-00798.ts" type="av">
+<FileVariant size="2741969" variant="15a72f46-409f-4d71-90d1-513c223ed174" />
+</File>
+<Timelines>
+<Download startTime="42884" endTime="47018" complete="1" fileType="av" variant="15a72f46-409f-4d71-90d1-513c223ed174">
+<Pause type="segmentWait" startTime="42884" endTime="46989" />
+</Download>
+<Transcode startTime="42882" endTime="46964" complete="1" fileType="av" variant="15a72f46-409f-4d71-90d1-513c223ed174" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="8788000" endOffset="8799999">
+<File name="media-00879.ts" type="av">
+<FileVariant size="3003121" variant="ea3c0490-d2f3-4240-a7c1-1eafedd67e1d" />
+</File>
+<Timelines>
+<Download startTime="47140" endTime="51067" complete="1" fileType="av" variant="ea3c0490-d2f3-4240-a7c1-1eafedd67e1d">
+<Pause type="segmentWait" startTime="47140" endTime="51045" />
+</Download>
+<Transcode startTime="47139" endTime="51019" complete="1" fileType="av" variant="ea3c0490-d2f3-4240-a7c1-1eafedd67e1d" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="9298000" endOffset="9309999">
+<File name="media-00930.ts" type="av">
+<FileVariant size="3282458" variant="5373ac07-170d-4669-b65d-bf07229b7696" />
+</File>
+<Timelines>
+<Download startTime="51241" endTime="55465" complete="1" fileType="av" variant="5373ac07-170d-4669-b65d-bf07229b7696">
+<Pause type="segmentWait" startTime="51241" endTime="55446" />
+</Download>
+<Transcode startTime="51239" endTime="55351" complete="1" fileType="av" variant="5373ac07-170d-4669-b65d-bf07229b7696" />
+</Timelines>
+</Segment>
+<Segment duration="5915" startOffset="9368000" endOffset="9373916">
+<File name="media-00937.ts" type="av">
+<FileVariant size="618902" variant="659b8061-c3be-4050-9c53-4a88580c586c" />
+</File>
+<Timelines>
+<Download startTime="55546" endTime="57570" complete="1" fileType="av" variant="659b8061-c3be-4050-9c53-4a88580c586c">
+<Pause type="segmentWait" startTime="55546" endTime="57549" />
+</Download>
+<Transcode startTime="55545" endTime="57499" complete="1" fileType="av" variant="659b8061-c3be-4050-9c53-4a88580c586c" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="9258000" endOffset="9269999">
+<File name="media-00926.ts" type="av">
+<FileVariant size="2514788" variant="023a5a36-ecf5-4b65-8aa9-0ac2c8cda850" />
+</File>
+<Timelines>
+<Download startTime="57732" endTime="61857" complete="1" fileType="av" variant="023a5a36-ecf5-4b65-8aa9-0ac2c8cda850">
+<Pause type="segmentWait" startTime="57732" endTime="61837" />
+</Download>
+<Transcode startTime="57730" endTime="61799" complete="1" fileType="av" variant="023a5a36-ecf5-4b65-8aa9-0ac2c8cda850" />
+</Timelines>
+</Segment>
+<Segment duration="11998" startOffset="8888000" endOffset="8899999">
+<File name="media-00889.ts" type="av">
+<FileVariant size="4420270" variant="72042b20-9e56-4883-8dab-445801a124a4" />
+</File>
+<Timelines>
+<Download startTime="61929" endTime="65855" complete="1" fileType="av" variant="72042b20-9e56-4883-8dab-445801a124a4">
+<Pause type="segmentWait" startTime="61929" endTime="65835" />
+</Download>
+<Transcode startTime="61927" endTime="65746" complete="1" fileType="av" variant="72042b20-9e56-4883-8dab-445801a124a4" />
 </Timelines>
 </Segment>
 </SegmentList>
-<PlaybackReports />
+<PlaybackReports>
+<Playback startTime="5804" endTime="11145" state="playing" progress="7" />
+<Playback startTime="11145" endTime="21190" state="buffering" progress="1050847" />
+<Playback startTime="21190" endTime="31260" state="buffering" progress="3510847" />
+<Playback startTime="31260" endTime="41283" state="buffering" progress="5970847" />
+<Playback startTime="41283" endTime="51399" state="buffering" progress="7560847" />
+<Playback startTime="51399" endTime="61379" state="buffering" progress="9300847" />
+<Playback startTime="61379" endTime="65953" state="buffering" progress="8944000" />
+</PlaybackReports>
 <StateReports />
 <StateReports />
 </SessionReport>

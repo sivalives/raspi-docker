@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+  spunk-uf:
+    image: sivalives/splunk-uf
+    tty: true
+    container_name: splunk-uf
+    restart: always
+    build:
+      context: ../splunkforwarder
+      args:
+        SPKPASS: ${SPKPASS} #From.enf file
+      dockerfile: Dockerfile
+    ports:
+      - 8089:8089
+      - 9997:9997
+    networks:
+      - mynetwork
+    volumes:
+      - opt-splunk-etc:/opt/splunkforwarder/etc
+      - opt-splunk-var:/opt/splunkforwarder/var
+  
+networks:
+  mynetwork:
+volumes:
+  opt-splunk-etc:
+  opt-splunk-var:
+  iptv-volume:
