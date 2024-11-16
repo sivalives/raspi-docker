@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://mqqt-publisher:5000/publish"
+url = "http://rabbitmq-publisher:5000/publish"
 
 def publish2mqqt(data):
     response = requests.post(url, json=data)

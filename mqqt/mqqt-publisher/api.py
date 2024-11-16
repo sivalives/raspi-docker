@@ -43,7 +43,8 @@ def publish():
     try:
         # Convert message to JSON and publish to the determined topic
         payload = json.dumps(message)
-        client.publish(topic, payload)
+        # Publish with retain=True to make the message persistent in the broker, use subscriber to send empty message to clear
+        client.publish(topic, payload,retain=True)
         return jsonify({"status": "success", "message": f"Data published successfully to topic '{topic}'"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500

@@ -42,7 +42,7 @@ try:
         "job_status": "success",  # Or "Completed", "Failed", etc.
         "job_error": None,  # Use error message if the job fails, or None if no error
     }
-    mqqt_data = {"message_type": "fish_data","message":data}
+    mqqt_data = {"queue": "fish","message":data}
     #Publish to MQQT for retrieval from splunk Asyc, as Mac might sleep all the time
     publish2mqqt(mqqt_data)
     

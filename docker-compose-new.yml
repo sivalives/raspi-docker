@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.9'  # Use 3.9 or higher for health checks and conditions
 services:
   spunk-uf:
     image: sivalives/splunk-uf
@@ -8,7 +8,7 @@ services:
     build:
       context: ./splunkforwarder
       args:
-        SPKPASS: ${SPKPASS} #From.enf file
+        SPKPASS: ${SPKPASS} # From .env file
       dockerfile: Dockerfile
     ports:
       - 8089:8089
@@ -18,7 +18,7 @@ services:
     volumes:
       - opt-splunk-etc:/opt/splunkforwarder/etc
       - opt-splunk-var:/opt/splunkforwarder/var
-  
+
   fish-feeder:
     build:
       context: ./fish-feeder
@@ -32,36 +32,49 @@ services:
     networks:
       - mynetwork
 
-  mosquitto:
-    container_name: mosquitto
-    image: eclipse-mosquitto
-    restart: always
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
     ports:
-      - "1883:1883"
-      - "9001:9001"
+      - "5672:5672" # RabbitMQ default messaging port
+      - "15672:15672" # RabbitMQ management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
     volumes:
-      - ./mqqt/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
-      - mqqt-data:/mosquitto/data
-      - mqqt-logs:/mosquitto/log
+      - rabbitmq-data:/var/lib/rabbitmq # RabbitMQ data storage
+      - rabbitmq-log:/var/log/rabbitmq # RabbitMQ logs
+      - rabbitmq-config:/etc/rabbitmq # RabbitMQ configuration
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+  rabbitmq-publisher:
+    build:
+      context: ./rabbit-mq/publisher
+    container_name: rabbitmq-publisher
+    ports:
+      - "5000:5000"
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
     networks:
       - mynetwork
 
-  mqqt-publisher:
-    container_name: mqqt-publisher
-    build: ./mqqt/mqqt-publisher
-    depends_on:
-      - mosquitto
-    ports:
-      - "5000:5000"
-    networks:
-      - mynetwork
-       
 networks:
   mynetwork:
+
 volumes:
   opt-splunk-etc:
   opt-splunk-var:
   fish-feeder-data:
-  mqqt-data:
-  mqqt-logs:
+  rabbitmq-data:
+  rabbitmq-log:
+  rabbitmq-config:
 
