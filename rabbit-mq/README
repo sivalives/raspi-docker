@@ -1,0 +1,3 @@
+#Use below command to create hash password for rabbitmq login
+Run inside the Docker rabbit mq container and map the hash to the definitions.json file
+rabbitmqctl hash_password foobarbaz
