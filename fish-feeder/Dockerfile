@@ -7,7 +7,7 @@ COPY servo_motor_180.py /bin/fish/servo_motor_180.py
 COPY dropbox_utils_v2.py /bin/fish/dropbox_utils_v2.py
 COPY log2splunk.py /bin/fish/log2splunk.py
 ##COPY wake_mac.py  /bin/fish/wake_mac.py
-COPY log2mqqt.py /bin/fish/log2mqqt.py
+COPY log2rabbitmq.py /bin/fish/log2rabbitmq.py
 ADD cronfile /etc/cron.d/fish-cron
 RUN touch /var/log/cron.log
 RUN chmod 0644 /etc/cron.d/fish-cron

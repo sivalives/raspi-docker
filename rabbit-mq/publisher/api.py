@@ -5,16 +5,12 @@ from flask import Flask, request, jsonify
 # RabbitMQ settings
 rabbitmq_host = "rabbitmq"
 port = 5672
+EXCHANGE_NAME = "raspberry_exchange"
+ROUTING_KEY = "fish"
+credentials = pika.PlainCredentials('admin', 'guest')
 
 # Flask app initialization
 app = Flask(__name__)
-
-# Queue mapping (key: API input, value: queue name)
-queue_mapping = {
-    "fish": "fish_queue",
-    "lifx": "lifx_queue",
-    "queue3": "my_queue_3",
-}
 
 # Establish connection to RabbitMQ with heartbeat
 def create_channel():
@@ -22,14 +18,11 @@ def create_channel():
         pika.ConnectionParameters(
             host=rabbitmq_host,
             port=port,
+            credentials=credentials,
             heartbeat=600  # Heartbeat interval in seconds (10 minutes)
         )
     )
     channel = connection.channel()
-    
-    # Declare all queues in the mapping
-    for queue in queue_mapping.values():
-        channel.queue_declare(queue=queue)
     
     return connection, channel
 
@@ -43,13 +36,6 @@ def publish():
     
     data = request.get_json()
 
-    if not data or "queue" not in data or "message" not in data:
-        return jsonify({"error": "Missing 'queue' or 'message' in request body"}), 400
-
-    queue = queue_mapping.get(data["queue"])
-    if not queue:
-        return jsonify({"error": f"Queue '{data['queue']}' is not configured"}), 400
-
     try:
         # Check if channel is closed and re-establish if necessary
         if channel.is_closed:
@@ -58,9 +44,9 @@ def publish():
         
         # Publish message to the specified queue
         message = json.dumps(data["message"])
-        channel.basic_publish(exchange="", routing_key=queue, body=message)
+        channel.basic_publish(exchange=EXCHANGE_NAME, routing_key=ROUTING_KEY, body=message)
 
-        return jsonify({"status": "success", "message": f"Message published to {queue}!"}), 200
+        return jsonify({"status": "success", "message": f"Message published to {EXCHANGE_NAME}->{ROUTING_KEY}!"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

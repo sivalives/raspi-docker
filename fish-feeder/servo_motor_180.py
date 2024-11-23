@@ -2,8 +2,7 @@ import RPi.GPIO as GPIO
 import time
 from datetime import datetime
 import pytz
-from log2splunk import log2splunk
-from log2mqqt import publish2mqqt
+from log2rabbitmq import publish2rmq
 
 # Set the GPIO mode
 GPIO.setmode(GPIO.BCM)
@@ -42,9 +41,9 @@ try:
         "job_status": "success",  # Or "Completed", "Failed", etc.
         "job_error": None,  # Use error message if the job fails, or None if no error
     }
-    mqqt_data = {"queue": "fish","message":data}
-    #Publish to MQQT for retrieval from splunk Asyc, as Mac might sleep all the time
-    publish2mqqt(mqqt_data)
+    rmq_data = {"queue": "fish","message":data}
+    #Publish to Rabbit MQ for retrieval from splunk Asyc, as Mac might sleep all the time
+    publish2rmq(rmq_data)
     
 finally:
     # Clean up the GPIO settings

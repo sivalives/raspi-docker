@@ -3,7 +3,7 @@ import json
 
 url = "http://rabbitmq-publisher:5000/publish"
 
-def publish2mqqt(data):
+def publish2rmq(data):
     response = requests.post(url, json=data)
     if response.status_code == 200:
         print("Data successfully published!")

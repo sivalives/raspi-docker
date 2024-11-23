@@ -41,7 +41,7 @@ def log2splunk(data):
     return response
 
 # Example usage
-'''
+
 if __name__ == "__main__":
     # Example data dictionary to add or update in Splunk KV Store
     # Example data dictionary to add or update in Splunk KV Store
@@ -52,4 +52,4 @@ if __name__ == "__main__":
         "job_error": None,  # Use error message if the job fails, or None if no error
     } 
     log2splunk(example_data)
-'''
+
