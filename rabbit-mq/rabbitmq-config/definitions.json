@@ -1,0 +1,72 @@
+{
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "queues": [
+    {
+      "name": "fish_queue",
+      "vhost": "/",
+      "durable": true
+    },
+    {
+      "name": "lifx_queue",
+      "vhost": "/",
+      "durable": true
+    },
+    {
+      "name": "test_queue",
+      "vhost": "/",
+      "durable": true
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "raspberry_exchange",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true
+    }
+  ],
+  "bindings": [
+    {
+      "source": "raspberry_exchange",
+      "vhost": "/",
+      "destination": "fish_queue",
+      "destination_type": "queue",
+      "routing_key": "fish"
+    },
+    {
+      "source": "raspberry_exchange",
+      "vhost": "/",
+      "destination": "lifx_queue",
+      "destination_type": "queue",
+      "routing_key": "lifx"
+    },
+    {
+      "source": "raspberry_exchange",
+      "vhost": "/",
+      "destination": "test_queue",
+      "destination_type": "queue",
+      "routing_key": "test"
+    }
+  ],
+  "users": [
+    {
+      "name": "admin",
+      "password_hash": "Q2yhh/3fHWA3q0H7OGXHeifYXwA5BnqIrSBQ68NpEfpyY5Aq",
+      "tags": "administrator"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "admin",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ]
+}
+
