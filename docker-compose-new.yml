@@ -35,6 +35,7 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
+    restart: always
     ports:
       - "5672:5672" # RabbitMQ default messaging port
       - "15672:15672" # RabbitMQ management UI port
@@ -43,8 +44,9 @@ services:
       RABBITMQ_DEFAULT_PASS: guest
     volumes:
       - rabbitmq-data:/var/lib/rabbitmq # RabbitMQ data storage
-      - rabbitmq-log:/var/log/rabbitmq # RabbitMQ logs
       - rabbitmq-config:/etc/rabbitmq # RabbitMQ configuration
+      - ./rabbit-mq/rabbitmq-config/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      - ./rabbit-mq/rabbitmq-config/definitions.json:/etc/rabbitmq/definitions.json
     networks:
       - mynetwork
     healthcheck:
@@ -57,6 +59,7 @@ services:
     build:
       context: ./rabbit-mq/publisher
     container_name: rabbitmq-publisher
+    restart: always
     ports:
       - "5000:5000"
     environment:
