@@ -1,3 +1,7 @@
 #Use below command to create hash password for rabbitmq login
 Run inside the Docker rabbit mq container and map the hash to the definitions.json file
 rabbitmqctl hash_password foobarbaz
+
+#To test publishing to MQ : 
+curl -X POST -H "Content-Type: application/json" -d '{"message": {"post_time": "record100", "job_name": "test_job100","job_status": "some status"}}' http://localhost:5000/publish
+
