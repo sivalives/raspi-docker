@@ -70,6 +70,47 @@ services:
     networks:
       - mynetwork
 
+  telegram:
+    image: sivalives/telegram
+    build:
+      context: ./telegram
+      dockerfile: Dockerfile
+    container_name: telegram-bot
+    environment:
+      TELEGRAM_BOTFATHER_APIKEY: ${TELEGRAM_BOTFATHER_APIKEY}
+      TELEGRAM_TELETHON_API_ID: ${TELEGRAM_TELETHON_API_ID}
+      TELEGRAM_TELETHON_API_HASH: ${TELEGRAM_TELETHON_API_HASH}
+      TELEGRAM_TELETHON_SESSION_NAME: ${TELEGRAM_TELETHON_SESSION_NAME}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+      MONGO_HOSTNAME: ${MONGO_HOSTNAME}
+      DROPBOX_APIKEY: ${DROPBOX_APIKEY}
+      LIFX_APIKEY: ${LIFX_APIKEY}
+      LIFX_BULB1_ID: ${LIFX_BULB1_ID}
+      LIFX_BULB2_ID: ${LIFX_BULB2_ID}
+    restart: always
+    networks:
+      - mynetwork
+    volumes:
+      - iptv-volume:/iptv-volume
+
+  syslog-ng:
+    image: lscr.io/linuxserver/syslog-ng:latest
+    container_name: syslog-ng
+    environment:
+      - PUID=1000             # User ID for permissions
+      - PGID=1000             # Group ID for permissions
+      - TZ=Etc/UTC            # Set the timezone
+      - LOG_TO_STDOUT=false   # Disable logging to stdout to focus on file-based logs
+    volumes:
+      - ./syslog-ng/config/syslog-ng.conf:/config/syslog-ng.conf                # Path to syslog-ng configuration files
+      - syslog-data:/var/syslog-ng/logs # Volume for storing logs
+    ports:
+      - 514:5514/udp
+      - 601:6601/tcp
+      - 6514:6514/tcp
+    restart: unless-stopped
+    privileged: true                    # Required for accessing /dev/log and /dev/kmsg
+
 networks:
   mynetwork:
 
@@ -80,4 +121,6 @@ volumes:
   rabbitmq-data:
   rabbitmq-log:
   rabbitmq-config:
+  iptv-volume:
+  syslog-data:
 

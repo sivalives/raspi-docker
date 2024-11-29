@@ -7,11 +7,25 @@ from dropbox_utils_v2 import DropboxUtilsClass
 import lifx
 import subprocess
 import requests
+from log2rabbitmq import publish2rmq
+from datetime import datetime
 
 def handle(msg):
-    MONGO_URI = "http://{0}/telegram".format(os.environ["MONGO_HOSTNAME"])
-    data = {"telegram": msg}
-    res = requests.post(MONGO_URI,json=data) 
+    #Disabled Mongo
+    #MONGO_URI = "http://{0}/telegram".format(os.environ["MONGO_HOSTNAME"])
+    #data = {"telegram": msg}
+    #res = requests.post(MONGO_URI,json=data) 
+
+    data = {
+        "post_time": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        "job_name": "telegram",
+        "job_status": "success", 
+        "job_error": msg
+    }
+    rmq_data = {"queue": "fish","message":data}
+    #Publish to Rabbit MQ for retrieval from splunk Asyc, as Mac might sleep all the time
+    publish2rmq(rmq_data)
+
     content_type, chat_type, chat_id = telepot.glance(msg)
     print(content_type, chat_type, chat_id)
     dbx=DropboxUtilsClass()

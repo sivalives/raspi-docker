@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  syslog-ng:
+    image: lscr.io/linuxserver/syslog-ng:latest
+    container_name: syslog-ng
+    environment:
+      - PUID=1000 # User ID
+      - PGID=1000 # Group ID
+      - TZ=Etc/UTC # Set the timezone
+      - LOG_TO_STDOUT= true # Optional, can be uncommented to log to stdout
+    volumes:
+      - ./config/syslog-ng.conf:/config/syslog-ng.conf # Path to your syslog-ng config
+      - /var/log:/var/raspi-logs # Optional, to collect host logs
+      - /dev/log:/dev/log
+      - /dev/kmsg:/dev/kmsg  # Access to kernel logs (optional)
+    ports:
+      - 514:514/udp # Syslog UDP port
+      - 601:601/tcp # Syslog TCP port
+      - 6514:6514/tcp # Syslog over TLS
+    restart: unless-stopped
+    privileged: true  # Add by Siva
+
