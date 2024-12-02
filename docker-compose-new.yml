@@ -18,6 +18,8 @@ services:
     volumes:
       - opt-splunk-etc:/opt/splunkforwarder/etc
       - opt-splunk-var:/opt/splunkforwarder/var
+      - syslog-data:/syslog-data
+      
 
   fish-feeder:
     build:

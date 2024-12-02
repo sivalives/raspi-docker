@@ -1,7 +1,8 @@
 import requests
 import json
 
-url = "http://rabbitmq-publisher:5000/publish"
+#pass routing key as query parameter
+url = "http://rabbitmq-publisher:5000/publish?routing_key=fish"
 
 def publish2rmq(data):
     response = requests.post(url, json=data)
