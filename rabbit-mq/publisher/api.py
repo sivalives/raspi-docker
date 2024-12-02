@@ -7,7 +7,6 @@ from flask import Flask, request, jsonify
 rabbitmq_host = "rabbitmq"
 port = 5672
 EXCHANGE_NAME = "raspberry_exchange"
-ROUTING_KEY = "fish"
 credentials = pika.PlainCredentials('admin', 'guest')
 
 # Flask app initialization
@@ -47,6 +46,10 @@ def publish():
 
     data = request.get_json()
     retries = int(request.args.get("retries", 3))  # Default to 3 retries if not specified
+    ROUTING_KEY = request.args.get("routing_key")
+
+    if not ROUTING_KEY:
+        return jsonify({"error": f"Empty routing key cannot publish data to MQ {data}"}), 500
 
     for attempt in range(retries):
         try:

@@ -16,7 +16,7 @@
       "durable": true
     },
     {
-      "name": "test_queue",
+      "name": "telegram_queue",
       "vhost": "/",
       "durable": true
     }
@@ -47,9 +47,9 @@
     {
       "source": "raspberry_exchange",
       "vhost": "/",
-      "destination": "test_queue",
+      "destination": "telegram_queue",
       "destination_type": "queue",
-      "routing_key": "test"
+      "routing_key": "telegram"
     }
   ],
   "users": [
