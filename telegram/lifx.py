@@ -41,7 +41,8 @@ def setEffects(bulbId,data):
 	req.add_header('Content-Type', 'application/json')
 	req.add_header('Authorization',lifxToken)
 	response = urllib.request.urlopen(req,json.dumps(data).encode('utf-8'))
-	print (json.loads(response.read()))
+	response =  json.loads(response.read())
+	return response
 
 
 
@@ -53,6 +54,7 @@ def setState(bulbId, data):
 	req.add_header('Authorization',lifxToken)
 	req.get_method = lambda: 'PUT'
 	response = urllib.request.urlopen(req,json.dumps(data).encode('utf-8'))
-	print (json.loads(response.read()))	
+	response = json.loads(response.read())
+	return response
 
 

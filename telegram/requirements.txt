@@ -2,3 +2,4 @@ telepot
 dropbox
 telethon
 speedtest-cli
+python-dotenv
