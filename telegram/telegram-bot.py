@@ -44,6 +44,15 @@ def handle_command_zee5(chat_id, data):
     publish2rmq(data)
     bot.sendDocument(chat_id=chat_id, document=open(file_path, 'rb'))
 
+def handle_command_fishfeed(chat_id, data):
+    """Handles the /fishfeed command."""
+    send_message(chat_id, "fish feeding please wait...")
+    fish_result = subprocess.check_output('docker exec -it fish-feeder python3 bin/fish/servo_motor_180.py', shell=True).decode()
+    data["raspberry_response"] = fish_result
+    data["status"] = "success"
+    publish2rmq(data)
+    send_message(chat_id, "fish feeding complete")
+
 def handle_command_reboot(chat_id, data):
     """Handles the /reboot command."""
     with open("/iptv-volume/telegram_pi_instructions.txt", "w") as f:
@@ -134,6 +143,11 @@ def handle(msg):
         handle_lifx(chat_id, data, "on", "Lights should be on now!")
     elif command == "/lifxoff":
         handle_lifx(chat_id, data, "off", "Lights should be off now!")
+    elif command == "/fishfeed":
+        handle_command_fishfeed(chat_id, data)
+        send_message(chat_id, "will try fish feeding 1 more time in 10 seconds")
+        time.sleep(10)
+        handle_command_fishfeed(chat_id, data)
     else:
         unknown_command_msg = "Unknown command received!"
         data["status"] = "unknown_command"

@@ -41,7 +41,7 @@ try:
         "job_status": "success",  # Or "Completed", "Failed", etc.
         "job_error": None,  # Use error message if the job fails, or None if no error
     }
-    rmq_data = {"queue": "fish","message":data}
+    rmq_data = {"message":data}
     #Publish to Rabbit MQ for retrieval from splunk Asyc, as Mac might sleep all the time
     publish2rmq(rmq_data)
     

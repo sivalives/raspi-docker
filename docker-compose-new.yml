@@ -96,6 +96,9 @@ services:
       - mynetwork
     volumes:
       - iptv-volume:/iptv-volume
+      - /var/run/docker.sock:/var/run/docker.sock  # Map Docker socket [used for running host level commands from container]
+    stdin_open: true # Keep the STDIN open to interact with the container
+    tty: true # Allocate a pseudo-TTY to run the container interactively
 
   syslog-ng:
     image: lscr.io/linuxserver/syslog-ng:latest
