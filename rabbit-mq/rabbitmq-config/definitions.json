@@ -11,7 +11,7 @@
       "durable": true
     },
     {
-      "name": "lifx_queue",
+      "name": "test_queue",
       "vhost": "/",
       "durable": true
     },
@@ -40,9 +40,9 @@
     {
       "source": "raspberry_exchange",
       "vhost": "/",
-      "destination": "lifx_queue",
+      "destination": "test_queue",
       "destination_type": "queue",
-      "routing_key": "lifx"
+      "routing_key": "test"
     },
     {
       "source": "raspberry_exchange",
