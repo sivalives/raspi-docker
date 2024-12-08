@@ -65,7 +65,10 @@ def publish():
 
             # Publish the message
             message = json.dumps(data["message"])
-            channel.basic_publish(exchange=EXCHANGE_NAME, routing_key=ROUTING_KEY, body=message)
+            #add delivery_mode=2 for disk persistance of message on rabbit mq restart
+            channel.basic_publish(exchange=EXCHANGE_NAME, routing_key=ROUTING_KEY, body=message,properties=pika.BasicProperties(
+        delivery_mode=2  # Make the message persistent
+    ))
 
             print(f"Message successfully published on attempt {attempt + 1}.")
             return jsonify({"status": "success", "message": f"Message published to {EXCHANGE_NAME}->{ROUTING_KEY}!"}), 200
