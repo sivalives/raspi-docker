@@ -15,6 +15,8 @@ CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 LIFX_BULB1_ID = os.environ["LIFX_BULB1_ID"]
 LIFX_BULB2_ID = os.environ["LIFX_BULB2_ID"]
 bot = telepot.Bot(TOKEN)
+ROUTING_KEY_TELEGRAM="telegram"
+ROUTING_KEY_TEST="test"
 
 def create_data_payload(msg, status, raspberry_response=""):
     """Creates a fresh data payload."""
@@ -41,7 +43,7 @@ def handle_command_zee5(chat_id, data):
     send_message(chat_id, "Preparing IPTV list, please wait...")
     file_path = "/iptv-volume/zee5.m3u"
     data["status"] = "success"
-    publish2rmq(data)
+    publish2rmq(ROUTING_KEY_TELEGRAM,data)
     bot.sendDocument(chat_id=chat_id, document=open(file_path, 'rb'))
 
 def handle_command_fishfeed(chat_id, data):
@@ -50,15 +52,22 @@ def handle_command_fishfeed(chat_id, data):
     fish_result = subprocess.check_output('docker exec -it fish-feeder python3 bin/fish/servo_motor_180.py', shell=True).decode()
     data["raspberry_response"] = fish_result
     data["status"] = "success"
-    publish2rmq(data)
+    publish2rmq(ROUTING_KEY_TELEGRAM,data)
     send_message(chat_id, "fish feeding complete")
+
+def handle_command_rabbitmq(chat_id, data):
+    """Handles the /rabbitmq command."""
+    for i in range(1000):
+        publish2rmq(ROUTING_KEY_TEST,data)
+    data["status"] = "success"
+    send_message(chat_id, "Added 1000 messages to RMQ TEST Queue")
 
 def handle_command_reboot(chat_id, data):
     """Handles the /reboot command."""
     with open("/iptv-volume/telegram_pi_instructions.txt", "w") as f:
         f.write("sudo reboot now")
     data["status"] = "success"
-    publish2rmq(data)
+    publish2rmq(ROUTING_KEY_TELEGRAM,data)
     send_message(chat_id, "Rebooting system...")
 
 def handle_command_speedtest(chat_id, data):
@@ -68,7 +77,7 @@ def handle_command_speedtest(chat_id, data):
         speed_result = subprocess.check_output('speedtest --simple', shell=True).decode()
         data["status"] = "success"
         data["raspberry_response"] = speed_result
-        publish2rmq(data)
+        publish2rmq(ROUTING_KEY_TELEGRAM,data)
         send_message(chat_id, speed_result)
     except Exception as e:
         send_message(chat_id, f"Speed test failed: {e}")
@@ -111,7 +120,7 @@ def handle_lifx(chat_id, data, power_state, message_on_success):
         dbx.upload_file(disable_file, "/lifx/disable_lifx_automation.txt")
 
     data["raspberry_response"] = json.dumps(result)
-    publish2rmq(data)
+    publish2rmq(ROUTING_KEY_TELEGRAM,data)
 
     # Send status messages for each bulb
     for bulb_label, status in result.items():
@@ -128,13 +137,15 @@ def handle(msg):
     if str(chat_id) != CHAT_ID:
         unauthorized_msg = "Sorry, you are not authorized!"
         data = create_data_payload(msg, "unauthorized", unauthorized_msg)
-        publish2rmq(data)
+        publish2rmq(ROUTING_KEY_TELEGRAM,data)
         send_message(chat_id, unauthorized_msg)
         return
 
     data = create_data_payload(msg, "pending")
     if command == "/zee5":
         handle_command_zee5(chat_id, data)
+    elif command == "/rabbitmq":
+        handle_command_rabbitmq(chat_id, data)
     elif command == "/reboot":
         handle_command_reboot(chat_id, data)
     elif command == "/speedtest":
@@ -152,7 +163,7 @@ def handle(msg):
         unknown_command_msg = "Unknown command received!"
         data["status"] = "unknown_command"
         data["raspberry_response"] = unknown_command_msg
-        publish2rmq(data)
+        publish2rmq(ROUTING_KEY_TELEGRAM,data)
         send_message(chat_id, unknown_command_msg)
 
 if __name__ == '__main__':

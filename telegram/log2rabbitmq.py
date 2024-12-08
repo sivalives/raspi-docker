@@ -1,10 +1,11 @@
 import requests
 import json
 
-#add the query parameter specific for telegram
-url = "http://rabbitmq-publisher:5000/publish?routing_key=telegram"
 
-def publish2rmq(data):
+def publish2rmq(routing_key,data):
+       
+    #add the query parameter specific for telegram
+    url = f"http://rabbitmq-publisher:5000/publish?routing_key={routing_key}"
     rmq_data = {"message": data}
     response = requests.post(url, json=rmq_data)
     if response.status_code == 200:
