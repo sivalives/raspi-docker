@@ -42,6 +42,9 @@ sudo systemctl enable docker
 echo "installing telnet"
 sudo apt -y install telnet
 
+echo "Setting up ansible"
+sudo apt install -y ansible
+
 #Setup samba prerequisites!
 bash ./samba/setup_samba_docker_volume.sh
 
