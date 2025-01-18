@@ -2,6 +2,7 @@ import os
 import time
 import json
 import telepot
+import requests
 from telepot.loop import MessageLoop
 from dropbox_utils_v2 import DropboxUtilsClass
 import lifx
@@ -126,6 +127,18 @@ def handle_lifx(chat_id, data, power_state, message_on_success):
     for bulb_label, status in result.items():
         bot.sendMessage(chat_id, f"{bulb_label} bulb: {'Success' if status == 'ok' else 'Error'}")
 
+def handle_command_led(chat_id, url, routing_key, light_state):
+    send_message(chat_id, "Turning on Fish LED lights....")
+    headers = {"Content-Type": "application/json"}
+    data = {"message": { "light_state": light_state }}
+    params = {"routing_key": routing_key}
+
+    response = requests.post(url, headers=headers, json=data, params=params)
+    status =  {
+        "status_code": response.status_code,
+        "response_text": response.text
+    }
+    send_message(chat_id, f"Fish LED Lights should be on now!! {status}")
 
 def handle(msg):
     """Main handler for Telegram messages."""
@@ -142,8 +155,10 @@ def handle(msg):
         return
 
     data = create_data_payload(msg, "pending")
-    if command == "/zee5":
-        handle_command_zee5(chat_id, data)
+    if command == "/ledon":
+        handle_command_led(chat_id=chat_id,url="http://rabbitmq-publisher:5000/publish",routing_key="led_control",light_state="on")
+    elif command == "/ledoff":
+        handle_command_led(chat_id=chat_id,url="http://rabbitmq-publisher:5000/publish",routing_key="led_control",light_state="off")
     elif command == "/rabbitmq":
         handle_command_rabbitmq(chat_id, data)
     elif command == "/reboot":

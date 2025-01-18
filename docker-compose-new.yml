@@ -34,6 +34,19 @@ services:
     networks:
       - mynetwork
 
+  fish-lights:
+    build:
+      context: ./fish-lights
+      dockerfile: Dockerfile
+    container_name: fish-lights
+    image: sivalives/fish-lights
+    privileged: true
+    restart: always
+    volumes:
+      - fish-lights-data:/var/log
+    networks:
+      - mynetwork
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
@@ -126,6 +139,7 @@ volumes:
   opt-splunk-etc:
   opt-splunk-var:
   fish-feeder-data:
+  fish-lights-data:
   rabbitmq-data:
   rabbitmq-log:
   rabbitmq-config:

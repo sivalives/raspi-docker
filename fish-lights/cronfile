@@ -1,0 +1,5 @@
+####*/2 * * * * root /usr/local/bin/python3 /bin/fish/led_lights.py >> /var/log/cron.log 2>&1
+#Feed fish at 8:00 am and 8:00 pm - convert to UTC time 
+30 14 * * * root /usr/local/bin/python3 /bin/fish/led_lights.py >> /var/log/cron.log 2>&1
+31 14 * * * root /usr/local/bin/python3 /bin/fish/led_lights.py >> /var/log/cron.log 2>&1
+#empty Line

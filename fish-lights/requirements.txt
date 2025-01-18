@@ -1,0 +1,6 @@
+termcolor
+requests
+dropbox
+RPi.GPIO
+pytz
+pika

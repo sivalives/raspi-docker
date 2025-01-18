@@ -3,3 +3,4 @@ dropbox
 telethon
 speedtest-cli
 python-dotenv
+requests
