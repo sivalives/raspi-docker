@@ -1,0 +1,2 @@
+#if you want to post directly to RABBIT without flask use this endpoint 
+curl -u admin:chageme -X POST -H "Content-Type: application/json" -d '{"properties":{},"routing_key":"led_control","payload":"off","payload_encoding":"string"}' http://localhost:15672/api/exchanges/%2F/raspberry_exchange/publish
