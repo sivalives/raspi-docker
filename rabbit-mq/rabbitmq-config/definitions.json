@@ -11,6 +11,11 @@
       "durable": true
     },
     {
+      "name": "led_queue",
+      "vhost": "/",
+      "durable": true
+    },
+    {
       "name": "test_queue",
       "vhost": "/",
       "durable": true
@@ -36,6 +41,13 @@
       "destination": "fish_queue",
       "destination_type": "queue",
       "routing_key": "fish"
+    },
+    {
+      "source": "raspberry_exchange",
+      "vhost": "/",
+      "destination": "led_queue",
+      "destination_type": "queue",
+      "routing_key": "led_control"
     },
     {
       "source": "raspberry_exchange",
