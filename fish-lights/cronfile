@@ -1,6 +1,6 @@
 #Fish Lights on at 6:00 pm and off at 10:00 pm - convert to UTC time 
-30 12 * * * root /usr/bin/curl curl -X POST -H "Content-Type: application/json" -d   '{"message": {"light_state": "on"}}' http://rabbitmq-publisher:5000/publish?routing_key=led_control
+30 12 * * * root /usr/bin/curl -X POST -H "Content-Type: application/json" -d   '{"message": {"light_state": "on"}}' http://rabbitmq-publisher:5000/publish?routing_key=led_control
  >> /var/log/cron.log 2>&1
-30 16 * * * /usr/bin/curl curl -X POST -H "Content-Type: application/json" -d   '{"message": {"light_state": "off"}}' http://rabbitmq-publisher:5000/publish?routing_key=led_control
+30 16 * * * /usr/bin/curl -X POST -H "Content-Type: application/json" -d   '{"message": {"light_state": "off"}}' http://rabbitmq-publisher:5000/publish?routing_key=led_control
  2>&1
 #empty Line
